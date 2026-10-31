@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <base href="https://algowise-ai.github.io/tg-football-tips/" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>頻道計分 · TG Football Tips</title>
+  <link rel="stylesheet" href="static/style.css" />
+<!-- algowise-theme-head -->
+<script>
+(function(){try{var m=localStorage.getItem("algowise-theme")||"system";
+document.documentElement.setAttribute("data-theme",m);
+var dark=window.matchMedia("(prefers-color-scheme: dark)").matches;
+var r=m==="light"?"light":m==="dark"?"dark":(dark?"dark":"light");
+document.documentElement.setAttribute("data-theme-resolved",r);
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo">⚽</span><span>TG Football Tips</span></div>
+    <nav>
+      <a href="index.html" class="">總覽</a>
+      <a href="channels.html" class="active">頻道計分</a>
+      <a href="profile.html" class="">頻道判斷</a>
+      <a href="copybet.html" class="">跟注飛</a>
+      
+      <a href="fade.html" class="">反買</a>
+      <a href="fade_noise.html" class="">噪音反買</a>
+      <a href="polymarket.html" class="">Polymarket 對比</a>
+      <a href="tipsme.html" class="">Tipsme</a>
+      <a href="api/summary.json" class="muted">API</a>
+    </nav>
+  </header>
+  <main class="container">
+    
+<h1>頻道計分 · 前瞻 Live</h1>
+<div class="tabs">
+  <a href="channels.html" class="active">Live 前瞻</a>
+  <a href="channels-bt-all.html" class="">Backtest 回測</a>
+  <span class="sep"></span>
+  <a href="channels-live-1d.html" class="">1 日</a><a href="channels-live-2d.html" class="">2 日</a><a href="channels-live-3d.html" class="">3 日</a><a href="channels-live-4d.html" class="">4 日</a><a href="channels-live-5d.html" class="">5 日</a><a href="channels-live-1w.html" class="">1 週</a><a href="channels-live-2w.html" class="">2 週</a><a href="channels-live-3w.html" class="">3 週</a><a href="channels-live-1.html" class="">1 個月</a><a href="channels-live-3.html" class="">3 個月</a><a href="channels-live-6.html" class="">6 個月</a><a href="channels-live-12.html" class="">12 個月</a><a href="channels.html" class="active">全部</a>
+</div>
+<div class="panel section" id="scorecard-live">
+  
+  <div class="tabs small" id="closing-toggle">收市賠率補價（odds_source=hkjc_closing）：
+    <a href="channels.html" class="active">不計（預設 · 冇入場賠率嘅贏波 = 0u）</a>
+    <a href="channels-live-all-cl1.html" class="">計入 incl. closing-odds fills（參考）</a>
+  </div>
+  <div class="muted small" id="untrackable">無法追蹤（untrackable，已剔除、唔計入任何注數）：<b id="untrackable-n">783</b> 注 · 參考補價（贏波 0u）：betexplorer 99
+    <details><summary>名單</summary><table class="small"><tr><th>#</th><th>時間</th><th>頻道</th><th>貼士</th><th>原因</th></tr>
+    <tr><td>42554</td><td>2026-11-01 02:01</td><td>AI足球⚡️ 实时推送</td><td>#南非超 02:15 克鲁格联 - 理查兹湾FC | 大2/2.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 02:15 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42553</td><td>2026-11-01 01:12</td><td>AI足球⚡️ 实时推送</td><td>2026-11-01 01:30 拜仁慕尼黑 - 多特蒙德 | 細4</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 01:30 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42549</td><td>2026-11-01 00:51</td><td>2026美加墨世界杯共贏🇭🇰</td><td>西甲 01:30 貝迪斯 - 馬拉加 | 貝迪斯 -1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 01:30 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC FB7993 no odds)</td></tr><tr><td>42546</td><td>2026-11-01 00:49</td><td>AI足球⚡️ 实时推送</td><td>2026-11-01 01:00 乌迪内斯 - 罗马 | 細3</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 01:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42543</td><td>2026-10-31 23:42</td><td>AI足球⚡️ 实时推送</td><td>2026-11-01 00:00 费内巴切 - 哥兹塔比 | 费内巴切亚盘从 -1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 00:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42544</td><td>2026-10-31 23:42</td><td>AI足球⚡️ 实时推送</td><td>2026-11-01 00:00 费内巴切 - 哥兹塔比 | 哥兹塔比 +1/1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 00:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42542</td><td>2026-10-31 23:41</td><td>AI足球⚡️ 实时推送</td><td>2026-11-01 00:00 阿玛祖鲁 - 金箭 | 細2/2.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 00:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42540</td><td>2026-10-31 23:14</td><td>AI足球⚡️ 实时推送</td><td>2026-10-31 23:30 费耶诺德 - 福图纳锡塔德 | 费耶诺德覆盖 -2/2.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 23:30 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42539</td><td>2026-10-31 22:58</td><td>🇧🇷巴西仔心水🇧🇷</td><td>英格蘭超級聯賽 23:00 曼城 - 白禮頓 | 白禮頓 +0.5/1</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 23:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC FB7991 no odds)</td></tr><tr><td>42532</td><td>2026-10-31 22:24</td><td>小太陽東方紅-紅遍天</td><td>英超 01:30 熱刺 - 水晶宮 | 大2.5/3</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 01:30 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC FB7986 no odds)</td></tr><tr><td>42533</td><td>2026-10-31 22:24</td><td>小太陽東方紅-紅遍天</td><td>西甲 01:30 貝迪斯 - 馬拉加 | 貝迪斯 -1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 01:30 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC FB7993 no odds)</td></tr><tr><td>42517</td><td>2026-10-31 21:38</td><td>2026美加墨世界杯共贏🇭🇰</td><td>德甲 22:30 奧格斯堡 - 費雷堡 | 奧格斯堡 +0</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 22:30 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42519</td><td>2026-10-31 21:38</td><td>2026美加墨世界杯共贏🇭🇰</td><td>德甲 22:30 慕遜加柏 - 柏德博恩 | 角球細9.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 22:30 HKT (BE market_not_covered; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42520</td><td>2026-10-31 21:38</td><td>2026美加墨世界杯共贏🇭🇰</td><td>德甲 22:30 史浩克零四 - RB萊比錫 | 細3</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 22:30 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42521</td><td>2026-10-31 21:38</td><td>2026美加墨世界杯共贏🇭🇰</td><td>德甲 22:30 雲達不萊梅 - 賀芬咸 | 賀芬咸 +0</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 22:30 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42500</td><td>2026-10-31 18:04</td><td>聞西免費波馬心水AV交流</td><td>泰國甲級聯賽 19:00 帕塔尼 - 拉西薩萊聯 | 大2.5/3</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 19:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42497</td><td>2026-10-31 17:34</td><td>2026美加墨世界杯共贏🇭🇰</td><td>德乙 20:00 達斯泰特 - 馬德堡 | 大3</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 20:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42499</td><td>2026-10-31 17:34</td><td>2026美加墨世界杯共贏🇭🇰</td><td>德乙 20:00 沃爾夫斯堡 - 奧斯納布克 | 沃爾夫斯堡 -1</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 20:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42492</td><td>2026-10-31 16:51</td><td>🇧🇷巴西仔心水🇧🇷</td><td>巴西 (lone team) | 巴西 +2</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 7h after post 10-31 16:51 HKT, kickoff unknown (BE lone_team; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42491</td><td>2026-10-31 16:47</td><td>🇧🇷巴西仔心水🇧🇷</td><td>麥克阿瑟FC - 西悉尼流浪者 | 客勝</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 7h after post 10-31 16:47 HKT (BE posted_after_kickoff; PM posted_after_kickoff; HKJC no fixture); posted after kickoff</td></tr><tr><td>42490</td><td>2026-10-31 16:02</td><td>暴龍足球賽馬2026🦖</td><td>俄羅斯女子超級聯賽 18:00 聖彼德斯堡女足 - 莫斯科火車頭女足 | 莫斯科火車頭女足 +1/1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 18:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42489</td><td>2026-10-31 15:37</td><td>🇫🇷法國佬．波馬心水分享🟢</td><td>澳大利亞甲級聯賽 16:40 麥克阿瑟FC - 西悉尼流浪者 | 麥克阿瑟FC +0/0.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 16:40 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42486</td><td>2026-10-31 15:27</td><td>小太陽東方紅-紅遍天</td><td>德乙 20:00 達斯泰特 - 馬德堡 | 馬德堡 -0/0.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 20:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42487</td><td>2026-10-31 15:27</td><td>小太陽東方紅-紅遍天</td><td>德乙 20:00 沃爾夫斯堡 - 奧斯納布克 | 大3.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 20:00 HKT (BE no_english_name; PM no_english_name; HKJC no fixture)</td></tr><tr><td>42484</td><td>2026-10-31 15:08</td><td>2026美加墨世界杯共贏🇭🇰</td><td>韓K2聯 15:30 忠南牙山 - 金浦市民 | 忠南牙山 +0</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 15:30 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42485</td><td>2026-10-31 15:08</td><td>2026美加墨世界杯共贏🇭🇰</td><td>韓K2聯 15:30 大邱FC - 水原三星 | 大3</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 15:30 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42481</td><td>2026-10-31 14:52</td><td>臉子哥✨精裝追女仔日記✨</td><td>澳大利亞甲級聯賽 16:40 麥克阿瑟FC - 西悉尼流浪者 | 西悉尼流浪者 +0</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 16:40 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42480</td><td>2026-10-31 14:25</td><td>馬屎黑集中營🖤</td><td>麥克阿瑟 (lone team) | 麥克阿瑟 +0/0.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 7h after post 10-31 14:25 HKT, kickoff unknown (BE lone_team; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42479</td><td>2026-10-31 14:09</td><td>🇧🇷巴西仔心水🇧🇷</td><td>墨爾本城 - 悉尼FC | 悉尼FC +0/0.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 7h after post 10-31 14:09 HKT (BE posted_after_kickoff; PM n/a (no exact Polymarket market); HKJC no fixture); posted after kickoff</td></tr><tr><td>42462</td><td>2026-10-31 10:44</td><td>悅悅精選推薦⚽️</td><td>法甲 02:00 勒哈費爾 - 巴黎聖日門 | 巴黎聖日門 -1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 02:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42466</td><td>2026-10-31 10:44</td><td>瑤瑤uu球球⚽️</td><td>法甲 02:00 勒哈費爾 - 巴黎聖日門 | 巴黎聖日門 -1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 02:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42464</td><td>2026-10-31 10:44</td><td>快速了解</td><td>法甲 02:00 勒哈費爾 - 巴黎聖日門 | 巴黎聖日門 -1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 02:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42455</td><td>2026-10-31 10:39</td><td>足球精英⚽️友友推薦</td><td>費雷堡 - 拜仁慕尼黑 | 大3.5/4</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 7h after post 10-31 10:39 HKT, kickoff unknown (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42457</td><td>2026-10-31 10:39</td><td>足球精英⚽️友友推薦</td><td>拖連奴 - 科木 | 大2.5/3</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 7h after post 10-31 10:39 HKT, kickoff unknown (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42451</td><td>2026-10-31 06:34</td><td>瑶姐赛事笔记</td><td>法甲 02:00 勒哈費爾 - 巴黎聖日門 | 巴黎聖日門 -1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 11-01 02:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42452</td><td>2026-10-31 06:34</td><td>瑶姐赛事笔记</td><td>法甲 02:00 奈斯 - 雷恩 | 大2.5/3</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 7h after post 10-31 06:34 HKT (BE posted_after_kickoff; PM n/a (no exact Polymarket market); HKJC no fixture); posted after kickoff</td></tr><tr><td>42449</td><td>2026-10-31 04:11</td><td>🇧🇷巴西仔心水🇧🇷</td><td>利爾 - 朗斯 | 朗斯 +0</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 7h after post 10-31 04:11 HKT, kickoff unknown (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42447</td><td>2026-10-31 03:47</td><td>AI足球⚡️ 实时推送</td><td>2026-10-31 04:00 比利亚雷亚尔 - 西班牙人 | 細3/3.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 04:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42446</td><td>2026-10-31 02:50</td><td>AI足球⚡️ 实时推送</td><td>2026-10-31 03:00 赫尔蒙德 - FC埃因霍温 | 赫尔蒙德 +2</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 03:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42445</td><td>2026-10-31 02:47</td><td>AI足球⚡️ 实时推送</td><td>2026-10-31 03:00 罗达JC - 阿尔克马尔青年队 | 大3.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 03:00 HKT (BE not_found; PM no_english_name; HKJC no fixture)</td></tr><tr><td>42443</td><td>2026-10-31 02:45</td><td>AI足球⚡️ 实时推送</td><td>2026-10-31 03:00 梅斯 - 波城 | 梅斯 -0.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 03:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42442</td><td>2026-10-31 02:43</td><td>AI足球⚡️ 实时推送</td><td>2026-10-31 03:00 南特 - 克莱蒙 | 模型预测克莱蒙特 +1</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 03:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42441</td><td>2026-10-31 02:43</td><td>AI足球⚡️ 实时推送</td><td>2026-10-31 03:00 罗德兹 - USL敦刻尔克 | 罗德兹让 -0.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 03:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42440</td><td>2026-10-31 02:11</td><td>AI足球⚡️ 实时推送</td><td>2026-10-31 02:30 布加勒斯特快速 - FK米耶尔库雷亚丘克 | 細3</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 02:30 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42438</td><td>2026-10-31 00:42</td><td>安迪波馬心水實錄</td><td>德乙 01:30 比勒費爾德 - 布倫斯維克 | 布倫斯維克 +0.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 01:30 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42436</td><td>2026-10-31 00:26</td><td>婷姐【心水飛】殺狗會</td><td>法甲 02:00 勒哈費爾 - 巴黎聖日門 | 巴黎聖日門 HT -0.5/1</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 02:00 HKT (BE market_not_covered; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42437</td><td>2026-10-31 00:26</td><td>婷姐【心水飛】殺狗會</td><td>法甲 02:00 奈斯 - 雷恩 | 奈斯 +0</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 02:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42434</td><td>2026-10-31 00:26</td><td>晴姐•心水•Tips🇭🇰</td><td>法甲 02:00 勒哈費爾 - 巴黎聖日門 | 巴黎聖日門 HT -0.5/1</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 02:00 HKT (BE market_not_covered; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42435</td><td>2026-10-31 00:26</td><td>晴姐•心水•Tips🇭🇰</td><td>法甲 02:00 奈斯 - 雷恩 | 奈斯 +0</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 02:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42429</td><td>2026-10-30 23:04</td><td>瑶姐赛事笔记</td><td>法甲 02:00 勒哈費爾 - 巴黎聖日門 | 巴黎聖日門 -1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 02:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42430</td><td>2026-10-30 23:04</td><td>瑶姐赛事笔记</td><td>法甲 02:00 奈斯 - 雷恩 | 大2.5/3</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 02:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42431</td><td>2026-10-30 23:04</td><td>瑶姐赛事笔记</td><td>挪超 02:00 波杜基林特 - 維京 | 大11</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 02:00 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC FB7956 no odds)</td></tr><tr><td>42425</td><td>2026-10-30 22:43</td><td>2026美加墨世界杯共贏🇭🇰</td><td>德乙 01:30 比勒費爾德 - 布倫斯維克 | 比勒費爾德 -0.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 01:30 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42426</td><td>2026-10-30 22:43</td><td>2026美加墨世界杯共贏🇭🇰</td><td>德乙 01:30 科特布斯 - 波琴 | 角球大11</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 01:30 HKT (BE market_not_covered; PM n/a (no exact Polymarket market); HKJC FB7949 no odds)</td></tr><tr><td>42421</td><td>2026-10-30 22:30</td><td>悅悅精選推薦⚽️</td><td>法甲 02:00 勒哈費爾 - 巴黎聖日門 | 巴黎聖日門 -1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 02:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42423</td><td>2026-10-30 22:30</td><td>瑤瑤uu球球⚽️</td><td>法甲 02:00 勒哈費爾 - 巴黎聖日門 | 巴黎聖日門 -1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 02:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42422</td><td>2026-10-30 22:30</td><td>快速了解</td><td>法甲 02:00 勒哈費爾 - 巴黎聖日門 | 巴黎聖日門 -1.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-31 02:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42418</td><td>2026-10-30 21:16</td><td>臉子哥✨精裝追女仔日記✨</td><td>卡塔爾甲級聯賽 22:15 艾沙哈尼亞 - 多哈艾阿裡 | 多哈艾阿裡 -0.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-30 22:15 HKT (BE not_found; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42414</td><td>2026-10-30 19:47</td><td>🇧🇷巴西仔心水🇧🇷</td><td>泰國甲級聯賽 20:00 斯沙克特 - 拉查布里府 | 斯沙克特 +0/0.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-30 20:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr><tr><td>42412</td><td>2026-10-30 19:01</td><td>2026美加墨世界杯共贏🇭🇰</td><td>泰超 20:00 斯沙克特聨 - 拉查布里府 | 斯沙克特聨 +0.5</td><td>untrackable: no HKJC / BetExplorer / Polymarket odds 2h after kickoff 10-30 20:00 HKT (BE no_english_name; PM n/a (no exact Polymarket market); HKJC no fixture)</td></tr>
+    </table></details></div>
+  <div class="muted small" id="closing-ref">HKJC u 標題（不計收市補價）<b id="ref-excl-u">-133.97</b> · 參考：計收市補價 <b id="ref-incl-u">-120.39</b>（收市補價 35 注）</div>
+  
+  <div class="muted small">資料範圍 2026-09-19 11:18 → 2026-11-01 04:16 · 時段 全部</div>
+  
+  
+<div class="table-wrap"><table class="table">
+  <thead><tr>
+    <th>頻道</th><th class="num">注數</th><th class="num">W-L-P</th><th class="num">勝率</th>
+    <th class="num">HKJC u</th><th class="num">市場 u</th><th class="num">ROI(HKJC)</th><th class="num" title="odds_source=hkjc_closing：用 HKJC 收市賠率結算嘅注數">收市補價</th><th class="num">作廢</th><th class="num">未結</th><th class="num">24h</th><th>最後貼士</th>
+    
+  </tr></thead>
+  <tbody>
+  
+    <tr>
+      <td>奶龍哥 心水⚽️ <span class="tag">medium</span></td>
+      <td class="num">34</td><td class="num">17-11-3</td><td class="num">60.7%</td>
+      
+      <td class="num pos">+5.15</td><td class="num pos">+5.15</td>
+      <td class="num">16.6%</td><td class="num muted">0</td><td class="num muted">1</td><td class="num amber">2</td>
+      <td class="num">1</td><td class="small muted">2026-10-31 20:02</td>
+      
+    </tr>
+  
+    <tr>
+      <td>港澳台珠三角心水料 <span class="tag">low</span></td>
+      <td class="num">11</td><td class="num">6-2-1</td><td class="num">75.0%</td>
+      
+      <td class="num pos">+2.71</td><td class="num pos">+2.71</td>
+      <td class="num">30.1%</td><td class="num muted">0</td><td class="num muted">2</td><td class="num amber">0</td>
+      <td class="num">1</td><td class="small muted">2026-10-31 20:58</td>
+      
+    </tr>
+  
+    <tr>
+      <td>🇫🇷法國佬．波馬心水分享🟢 <span class="tag">priority</span></td>
+      <td class="num">40</td><td class="num">19-10-1</td><td class="num">65.5%</td>
+      
+      <td class="num pos">+2.58</td><td class="num pos">+3.13</td>
+      <td class="num">8.6%</td><td class="num muted">1</td><td class="num muted">9</td><td class="num amber">1</td>
+      <td class="num">0</td><td class="small muted">2026-10-30 15:50</td>
+      
+    </tr>
+  
+    <tr>
+      <td>kiki茶茶谷 <span class="tag">low</span></td>
+      <td class="num">22</td><td class="num">12-7-1</td><td class="num">63.2%</td>
+      
+      <td class="num pos">+1.92</td><td class="num pos">+1.92</td>
+      <td class="num">9.6%</td><td class="num muted">0</td><td class="num muted">1</td><td class="num amber">1</td>
+      <td class="num">2</td><td class="small muted">2026-10-31 22:18</td>
+      
+    </tr>
+  
+    <tr>
+      <td>HK🇭🇰 港女必勝料 <span class="tag">priority</span></td>
+      <td class="num">55</td><td class="num">27-15-1</td><td class="num">64.3%</td>
+      
+      <td class="num pos">+1.35</td><td class="num pos">+4.01</td>
+      <td class="num">3.1%</td><td class="num muted">1</td><td class="num muted">10</td><td class="num amber">2</td>
+      <td class="num">3</td><td class="small muted">2026-10-31 20:17</td>
+      
+    </tr>
+  
+    <tr>
+      <td>🔥牛B心水🔥 <span class="tag">low</span></td>
+      <td class="num">4</td><td class="num">3-1-0</td><td class="num">75.0%</td>
+      
+      <td class="num pos">+1.34</td><td class="num pos">+1.34</td>
+      <td class="num">33.5%</td><td class="num muted">0</td><td class="num muted">0</td><td class="num amber">0</td>
+      <td class="num">0</td><td class="small muted">2026-10-28 19:20</td>
+      
+    </tr>
+  
+    <tr>
+      <td>AI足球⚡️ 实时推送 <span class="tag">low</span></td>
+      <td class="num">10</td><td class="num">2-1-0</td><td class="num">66.7%</td>
+      
+      <td class="num pos">+0.90</td><td class="num pos">+0.90</td>
+      <td class="num">30.0%</td><td class="num muted">0</td><td class="num muted">0</td><td class="num amber">7</td>
+      <td class="num">1</td><td class="small muted">2026-11-01 03:44</td>
+      
+    </tr>
+  
+    <tr>
+      <td>悅悅精選推薦⚽️ <span class="tag">ad-heavy</span></td>
+      <td class="num">51</td><td class="num">22-15-0</td><td class="num">59.5%</td>
+      
+      <td class="num pos">+0.76</td><td class="num pos">+2.48</td>
+      <td class="num">2.1%</td><td class="num muted">0</td><td class="num muted">12</td><td class="num amber">2</td>
+      <td class="num">1</td><td class="small muted">2026-10-31 10:44</td>
+      
+    </tr>
+  
+    <tr>
+      <td>快速了解 <span class="tag">ad-heavy</span></td>
+      <td class="num">51</td><td class="num">22-15-0</td><td class="num">59.5%</td>
+      
+      <td class="num pos">+0.76</td><td class="num pos">+2.48</td>
+      <td class="num">2.1%</td><td class="num muted">0</td><td class="num muted">12</td><td class="num amber">2</td>
+      <td class="num">1</td><td class="small muted">2026-10-31 10:44</td>
+      
+    </tr>
+  
+    <tr>
+      <td>瑤瑤uu球球⚽️ <span class="tag">ad-heavy</span></td>
+      <td class="num">51</td><td class="num">22-15-0</td><td class="num">59.5%</td>
+      
+      <td class="num pos">+0.76</td><td class="num pos">+2.48</td>
+      <td class="num">2.1%</td><td class="num muted">0</td><td class="num muted">12</td><td class="num amber">2</td>
+      <td class="num">1</td><td class="small muted">2026-10-31 10:44</td>
+      
+    </tr>
+  
+    <tr>
+      <td>聞西免費波馬心水AV交流 <span class="tag">ad-heavy</span></td>
+      <td class="num">21</td><td class="num">5-4-0</td><td class="num">55.6%</td>
+      
+      <td class="num pos">+0.25</td><td class="num pos">+0.25</td>
+      <td class="num">2.8%</td><td class="num muted">0</td><td class="num muted">8</td><td class="num amber">4</td>
+      <td class="num">0</td><td class="small muted">2026-10-29 20:03</td>
+      
+    </tr>
+  
+    <tr>
+      <td>⚽️💓米米足球心水分享💓⚽️🎖 <span class="tag">low</span></td>
+      <td class="num">2</td><td class="num">1-1-0</td><td class="num">50.0%</td>
+      
+      <td class="num pos">+0.05</td><td class="num pos">+0.05</td>
+      <td class="num">2.5%</td><td class="num muted">0</td><td class="num muted">0</td><td class="num amber">0</td>
+      <td class="num">0</td><td class="small muted">2026-10-22 00:23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>世界杯 足球推单 红单预测 <span class="tag">low</span></td>
+      <td class="num">1</td><td class="num">0-0-0</td><td class="num">-</td>
+      
+      <td class="num ">+0.00</td><td class="num ">+0.00</td>
+      <td class="num">-</td><td class="num muted">0</td><td class="num muted">0</td><td class="num amber">1</td>
+      <td class="num">0</td><td class="small muted">2026-10-22 21:13</td>
+      
+    </tr>
+  
+    <tr>
+      <td>上水⚽️🎣🦀🐋2 <span class="tag">low</span></td>
+      <td class="num">2</td><td class="num">1-1-0</td><td class="num">50.0%</td>
+      
+      <td class="num neg">-0.25</td><td class="num neg">-0.25</td>
+      <td class="num">-12.5%</td><td class="num muted">0</td><td class="num muted">0</td><td class="num amber">0</td>
+      <td class="num">0</td><td class="small muted">2026-10-16 00:44</td>
+      
+    </tr>
+  
+    <tr>
+      <td>球探分析師｜獨家猛料 <span class="tag">low</span></td>
+      <td class="num">26</td><td class="num">9-6-2</td><td class="num">60.0%</td>
+      
+      <td class="num neg">-0.45</td><td class="num neg">-0.45</td>
+      <td class="num">-2.6%</td><td class="num muted">0</td><td class="num muted">9</td><td class="num amber">0</td>
+      <td class="num">0</td><td class="small muted">2026-10-29 18:20</td>
+      
+    </tr>
+  
+    <tr>
+      <td>安迪波馬心水實錄 <span class="tag">low</span></td>
+      <td class="num">62</td><td class="num">32-23-1</td><td class="num">58.2%</td>
+      
+      <td class="num neg">-0.61</td><td class="num pos">+0.23</td>
+      <td class="num">-1.1%</td><td class="num muted">0</td><td class="num muted">1</td><td class="num amber">5</td>
+      <td class="num">1</td><td class="small muted">2026-10-31 23:21</td>
+      
+    </tr>
+  
+    <tr>
+      <td>182体育 足球推单 🫥 足球比赛 体育电竞 <span class="tag">low</span></td>
+      <td class="num">6</td><td class="num">2-2-0</td><td class="num">50.0%</td>
+      
+      <td class="num neg">-0.68</td><td class="num neg">-0.68</td>
+      <td class="num">-17.0%</td><td class="num muted">0</td><td class="num muted">2</td><td class="num amber">0</td>
+      <td class="num">0</td><td class="small muted">2026-10-28 16:05</td>
+      
+    </tr>
+  
+    <tr>
+      <td>心水哥免費心水貼士推薦 <span class="tag">low</span></td>
+      <td class="num">13</td><td class="num">5-4-1</td><td class="num">55.6%</td>
+      
+      <td class="num neg">-0.98</td><td class="num neg">-0.98</td>
+      <td class="num">-9.8%</td><td class="num muted">1</td><td class="num muted">1</td><td class="num amber">2</td>
+      <td class="num">0</td><td class="small muted">2026-10-28 22:20</td>
+      
+    </tr>
+  
+    <tr>
+      <td>馬會波經情報站 📈 <span class="tag">low</span></td>
+      <td class="num">26</td><td class="num">12-11-0</td><td class="num">52.2%</td>
+      
+      <td class="num neg">-1.08</td><td class="num neg">-1.08</td>
+      <td class="num">-4.7%</td><td class="num muted">0</td><td class="num muted">1</td><td class="num amber">2</td>
+      <td class="num">0</td><td class="small muted">2026-10-30 18:41</td>
+      
+    </tr>
+  
+    <tr>
+      <td>💡阿拉丁x足球心水💡 <span class="tag">low</span></td>
+      <td class="num">3</td><td class="num">1-2-0</td><td class="num">33.3%</td>
+      
+      <td class="num neg">-1.50</td><td class="num neg">-1.50</td>
+      <td class="num">-50.0%</td><td class="num muted">1</td><td class="num muted">0</td><td class="num amber">0</td>
+      <td class="num">0</td><td class="small muted">2026-10-25 21:59</td>
+      
+    </tr>
+  
+    <tr>
+      <td>🐯曹達華辦案實錄2026⚽️🐴 <span class="tag">priority</span></td>
+      <td class="num">61</td><td class="num">32-21-3</td><td class="num">60.4%</td>
+      
+      <td class="num neg">-1.88</td><td class="num pos">+4.08</td>
+      <td class="num">-3.4%</td><td class="num muted">1</td><td class="num muted">5</td><td class="num amber">0</td>
+      <td class="num">0</td><td class="small muted">2026-10-29 23:47</td>
+      
+    </tr>
+  
+    <tr>
+      <td>足球賽事⚽️KK貼士post區🇭🇰 <span class="tag">medium</span></td>
+      <td class="num">23</td><td class="num">8-5-0</td><td class="num">61.5%</td>
+      
+      <td class="num neg">-1.94</td><td class="num neg">-1.38</td>
+      <td class="num">-14.9%</td><td class="num muted">0</td><td class="num muted">10</td><td class="num amber">0</td>
+      <td class="num">0</td><td class="small muted">2026-10-24 23:03</td>
+      
+    </tr>
+  
+    <tr>
+      <td>暴龍足球賽馬2026🦖 <span class="tag">medium</span></td>
+      <td class="num">3</td><td class="num">0-2-0</td><td class="num">0.0%</td>
+      
+      <td class="num neg">-2.00</td><td class="num neg">-2.00</td>
+      <td class="num">-100.0%</td><td class="num muted">0</td><td class="num muted">0</td><td class="num amber">1</td>
+      <td class="num">0</td><td class="small muted">2026-10-19 19:28</td>
+      
+    </tr>
+  
+    <tr>
+      <td>至尊師傅🌸獨家台 <span class="tag">priority</span></td>
+      <td class="num">60</td><td class="num">27-27-1</td><td class="num">50.0%</td>
+      
+      <td class="num neg">-2.60</td><td class="num neg">-2.60</td>
+      <td class="num">-4.7%</td><td class="num muted">1</td><td class="num muted">2</td><td class="num amber">3</td>
+      <td class="num">2</td><td class="small muted">2026-10-31 21:49</td>
+      
+    </tr>
+  
+    <tr>
+      <td>瑶姐赛事笔记 <span class="tag">low</span></td>
+      <td class="num">55</td><td class="num">27-21-1</td><td class="num">56.2%</td>
+      
+      <td class="num neg">-2.96</td><td class="num neg">-2.08</td>
+      <td class="num">-6.0%</td><td class="num muted">1</td><td class="num muted">3</td><td class="num amber">3</td>
+      <td class="num">4</td><td class="small muted">2026-10-31 23:02</td>
+      
+    </tr>
+  
+    <tr>
+      <td>@landguygamble <span class="tag">medium</span></td>
+      <td class="num">54</td><td class="num">26-23-4</td><td class="num">53.1%</td>
+      
+      <td class="num neg">-3.29</td><td class="num neg">-0.50</td>
+      <td class="num">-6.2%</td><td class="num muted">0</td><td class="num muted">1</td><td class="num amber">0</td>
+      <td class="num">2</td><td class="small muted">2026-10-31 22:08</td>
+      
+    </tr>
+  
+    <tr>
+      <td>賭俠2026•化骨龍投注紀錄 <span class="tag">low</span></td>
+      <td class="num">6</td><td class="num">1-4-1</td><td class="num">20.0%</td>
+      
+      <td class="num neg">-3.52</td><td class="num neg">-3.52</td>
+      <td class="num">-58.7%</td><td class="num muted">0</td><td class="num muted">0</td><td class="num amber">0</td>
+      <td class="num">0</td><td class="small muted">2026-10-27 23:01</td>
+      
+    </tr>
+  
+    <tr>
+      <td>馬屎黑集中營🖤 <span class="tag">low</span></td>
+      <td class="num">29</td><td class="num">6-11-2</td><td class="num">35.3%</td>
+      
+      <td class="num neg">-4.48</td><td class="num neg">-4.48</td>
+      <td class="num">-23.6%</td><td class="num muted">1</td><td class="num muted">2</td><td class="num amber">8</td>
+      <td class="num">0</td><td class="small muted">2026-10-30 20:02</td>
+      
+    </tr>
+  
+    <tr>
+      <td>足籃記 <span class="tag">low</span></td>
+      <td class="num">50</td><td class="num">26-17-1</td><td class="num">60.5%</td>
+      
+      <td class="num neg">-4.98</td><td class="num neg">-1.57</td>
+      <td class="num">-11.3%</td><td class="num muted">5</td><td class="num muted">1</td><td class="num amber">5</td>
+      <td class="num">2</td><td class="small muted">2026-10-31 22:39</td>
+      
+    </tr>
+  
+    <tr>
+      <td>⚽️大天二猛料心水台💦 <span class="tag">low</span></td>
+      <td class="num">48</td><td class="num">21-23-1</td><td class="num">47.7%</td>
+      
+      <td class="num neg">-5.12</td><td class="num neg">-5.12</td>
+      <td class="num">-11.4%</td><td class="num muted">0</td><td class="num muted">1</td><td class="num amber">2</td>
+      <td class="num">0</td><td class="small muted">2026-10-25 18:36</td>
+      
+    </tr>
+  
+    <tr>
+      <td>足球精英⚽️友友推薦 <span class="tag">low</span></td>
+      <td class="num">82</td><td class="num">26-15-1</td><td class="num">63.4%</td>
+      
+      <td class="num neg">-5.62</td><td class="num neg">-3.25</td>
+      <td class="num">-13.4%</td><td class="num muted">3</td><td class="num muted">37</td><td class="num amber">3</td>
+      <td class="num">1</td><td class="small muted">2026-10-31 10:39</td>
+      
+    </tr>
+  
+    <tr>
+      <td>小太陽東方紅-紅遍天 <span class="tag">low</span></td>
+      <td class="num">45</td><td class="num">12-15-4</td><td class="num">44.4%</td>
+      
+      <td class="num neg">-5.79</td><td class="num neg">-5.79</td>
+      <td class="num">-18.7%</td><td class="num muted">1</td><td class="num muted">12</td><td class="num amber">2</td>
+      <td class="num">1</td><td class="small muted">2026-10-31 22:24</td>
+      
+    </tr>
+  
+    <tr>
+      <td>太子馬會出糧🉐｜心水推介 <span class="tag">ad-heavy</span></td>
+      <td class="num">29</td><td class="num">10-12-1</td><td class="num">45.5%</td>
+      
+      <td class="num neg">-6.42</td><td class="num neg">-6.08</td>
+      <td class="num">-27.9%</td><td class="num muted">0</td><td class="num muted">1</td><td class="num amber">5</td>
+      <td class="num">1</td><td class="small muted">2026-10-31 19:43</td>
+      
+    </tr>
+  
+    <tr>
+      <td>婷姐【心水飛】殺狗會 <span class="tag">low</span></td>
+      <td class="num">105</td><td class="num">36-35-4</td><td class="num">50.7%</td>
+      
+      <td class="num neg">-8.51</td><td class="num neg">-5.54</td>
+      <td class="num">-11.3%</td><td class="num muted">0</td><td class="num muted">27</td><td class="num amber">3</td>
+      <td class="num">2</td><td class="small muted">2026-10-31 20:31</td>
+      
+    </tr>
+  
+    <tr>
+      <td>晴姐•心水•Tips🇭🇰 <span class="tag">low</span></td>
+      <td class="num">88</td><td class="num">36-35-4</td><td class="num">50.7%</td>
+      
+      <td class="num neg">-8.51</td><td class="num neg">-5.54</td>
+      <td class="num">-11.3%</td><td class="num muted">0</td><td class="num muted">10</td><td class="num amber">3</td>
+      <td class="num">2</td><td class="small muted">2026-10-31 20:30</td>
+      
+    </tr>
+  
+    <tr>
+      <td>阿木足球心水實錄✍🏻 <span class="tag">low</span></td>
+      <td class="num">49</td><td class="num">10-17-4</td><td class="num">37.0%</td>
+      
+      <td class="num neg">-8.54</td><td class="num neg">-6.54</td>
+      <td class="num">-27.5%</td><td class="num muted">0</td><td class="num muted">18</td><td class="num amber">0</td>
+      <td class="num">1</td><td class="small muted">2026-10-31 20:32</td>
+      
+    </tr>
+  
+    <tr>
+      <td>🐈師傅討論區😺 <span class="tag">low</span></td>
+      <td class="num">109</td><td class="num">41-42-4</td><td class="num">49.4%</td>
+      
+      <td class="num neg">-9.20</td><td class="num neg">-9.20</td>
+      <td class="num">-10.6%</td><td class="num muted">0</td><td class="num muted">19</td><td class="num amber">3</td>
+      <td class="num">14</td><td class="small muted">2026-11-01 04:16</td>
+      
+    </tr>
+  
+    <tr>
+      <td>2026美加墨世界杯共贏🇭🇰 <span class="tag">low</span></td>
+      <td class="num">65</td><td class="num">22-28-4</td><td class="num">44.0%</td>
+      
+      <td class="num neg">-12.72</td><td class="num neg">-11.90</td>
+      <td class="num">-23.6%</td><td class="num muted">3</td><td class="num muted">2</td><td class="num amber">9</td>
+      <td class="num">5</td><td class="small muted">2026-11-01 00:51</td>
+      
+    </tr>
+  
+    <tr>
+      <td>@boyboyboytips <span class="tag">medium</span></td>
+      <td class="num">86</td><td class="num">23-37-2</td><td class="num">38.3%</td>
+      
+      <td class="num neg">-15.03</td><td class="num neg">-13.98</td>
+      <td class="num">-24.2%</td><td class="num muted">0</td><td class="num muted">24</td><td class="num amber">0</td>
+      <td class="num">2</td><td class="small muted">2026-10-31 19:01</td>
+      
+    </tr>
+  
+    <tr>
+      <td>臉子哥✨精裝追女仔日記✨ <span class="tag">ad-heavy</span></td>
+      <td class="num">95</td><td class="num">39-51-1</td><td class="num">43.3%</td>
+      
+      <td class="num neg">-15.28</td><td class="num neg">-15.28</td>
+      <td class="num">-16.8%</td><td class="num muted">1</td><td class="num muted">0</td><td class="num amber">4</td>
+      <td class="num">7</td><td class="small muted">2026-11-01 01:10</td>
+      
+    </tr>
+  
+    <tr>
+      <td>🇧🇷巴西仔心水🇧🇷 <span class="tag">low</span></td>
+      <td class="num">154</td><td class="num">27-33-3</td><td class="num">45.0%</td>
+      
+      <td class="num neg">-18.55</td><td class="num neg">-11.00</td>
+      <td class="num">-29.4%</td><td class="num muted">14</td><td class="num muted">67</td><td class="num amber">24</td>
+      <td class="num">7</td><td class="small muted">2026-11-01 03:54</td>
+      
+    </tr>
+  
+  </tbody>
+  <tfoot>
+    
+    <tr>
+      <th>合計 TOTAL</th><th class="num">1787</th><th class="num">676-620-57</th><th class="num">52.2%</th>
+      
+      <th class="num neg" id="total-hkjc-u">-133.97</th><th class="num neg">-91.07</th>
+      <th class="num">-9.9%</th><th class="num" id="total-closing-fills">35</th><th class="num">323</th><th class="num">111</th><th class="num">65</th><th></th>
+      
+    </tr>
+  </tfoot>
+</table></div>
+
+  <div class="note">
+  Live：tip_picks live_demo、excluded=0、足球；HKJC u（預設 / 標題）= 只計 HKJC 入場賠率（hkjc_entry）；冇入場賠率嘅贏波（包括收市補價 hkjc_closing、betexplorer 同 polymarket 補價）計 0u；開波 2 個鐘後（冇開波時間或開波後先出嘅貼士：出貼 7 個鐘後）三邊都冇價 = 無法追蹤（剔除，另列）。
+  「收市補價」欄 = 用收市賠率結算嘅注數。市場 u = betexplorer 收市價補價。即時由 DB 計（60 秒快取）。
+  
+  </div>
+</div>
+
+  </main>
+  <footer class="footer">
+    唯讀 · Live ≠ Backtest（唔會混）· Tipsme 另計 · HKJC u：冇 HKJC 賠率嘅贏波 = 0u · 頻道計分 1u = HK$500（真錢注 1u = HK$200）· SQLite ro · PUBLIC · 頁面時間 2026-11-01 04:53 HKT
+  </footer>
+  <script src="static/sort.js" defer></script>
+<!-- algowise-theme -->
+<script src="static/algowise-theme.js" defer></script>
+</body>
+</html>

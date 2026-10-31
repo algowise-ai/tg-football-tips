@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <base href="https://algowise-ai.github.io/tg-football-tips/" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>頻道判斷 · TG Football Tips</title>
+  <link rel="stylesheet" href="static/style.css" />
+<!-- algowise-theme-head -->
+<script>
+(function(){try{var m=localStorage.getItem("algowise-theme")||"system";
+document.documentElement.setAttribute("data-theme",m);
+var dark=window.matchMedia("(prefers-color-scheme: dark)").matches;
+var r=m==="light"?"light":m==="dark"?"dark":(dark?"dark":"light");
+document.documentElement.setAttribute("data-theme-resolved",r);
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo">⚽</span><span>TG Football Tips</span></div>
+    <nav>
+      <a href="index.html" class="">總覽</a>
+      <a href="channels.html" class="">頻道計分</a>
+      <a href="profile.html" class="active">頻道判斷</a>
+      <a href="copybet.html" class="">跟注飛</a>
+      
+      <a href="fade.html" class="">反買</a>
+      <a href="fade_noise.html" class="">噪音反買</a>
+      <a href="polymarket.html" class="">Polymarket 對比</a>
+      <a href="tipsme.html" class="">Tipsme</a>
+      <a href="api/summary.json" class="muted">API</a>
+    </nav>
+  </header>
+  <main class="container">
+    
+<h1>頻道判斷（channel_profile）</h1>
+<div class="tabs">
+  <a href="profile-1d.html" class="">1 日</a><a href="profile-2d.html" class="">2 日</a><a href="profile-3d.html" class="">3 日</a><a href="profile-4d.html" class="">4 日</a><a href="profile-5d.html" class="">5 日</a><a href="profile-1w.html" class="">1 週</a><a href="profile-2w.html" class="">2 週</a><a href="profile-3w.html" class="">3 週</a><a href="profile-1.html" class="">1 個月</a><a href="profile-3.html" class="">3 個月</a><a href="profile-6.html" class="">6 個月</a><a href="profile-12.html" class="active">12 個月</a><a href="profile.html" class="">全部</a>
+</div>
+<div class="muted small">生成 2026-11-01 04:46:24 HKT · Live 同 Backtest 分開列 · 時段 最近 12 個月（按 posted_at） · Live 欄按此時段重算；判斷／BT 仍用全部時期（每4小時）</div>
+<div class="panel section" id="profile">
+<div class="table-wrap"><table class="table">
+  <thead><tr><th>#</th><th>頻道</th><th>判斷</th><th class="num">Live 結算</th><th class="num">Live W-L-P</th><th class="num">Live HKJC u</th><th class="num">BT 注數</th><th class="num">BT ROI</th><th class="num">BT ROI@1.85</th><th>原因</th></tr></thead>
+  <tbody>
+  
+  <tr>
+    <td class="muted">1</td>
+    <td>奶龍哥 心水</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本一般</div></td>
+    <td class="num">31</td><td class="num">17-11-3</td>
+    <td class="num pos">+5.15</td>
+    <td class="num">368</td><td class="num neg">-6.1%</td><td class="num neg">-6.5%</td>
+    <td class="small">Live +5.15u（31 注）；Backtest ROI -6.1%（368 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">2</td>
+    <td>港澳台珠三角心水料</td>
+    <td><span class="verdict v-candidate">可考慮跟（候選）</span><div class="small muted">樣本細</div></td>
+    <td class="num">9</td><td class="num">6-2-1</td>
+    <td class="num pos">+2.71</td>
+    <td class="num">203</td><td class="num pos">7.1%</td><td class="num pos">4.7%</td>
+    <td class="small">Live +2.71u（9 注）+ Backtest ROI +7.1%（203 注，假設賠率 1.85 都唔蝕）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">3</td>
+    <td>法國佬．波馬心水分享</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本一般</div></td>
+    <td class="num">30</td><td class="num">19-10-1</td>
+    <td class="num pos">+2.58</td>
+    <td class="num">590</td><td class="num neg">-9.4%</td><td class="num neg">-9.5%</td>
+    <td class="small">Live +2.58u（30 注）；Backtest ROI -9.4%（590 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">4</td>
+    <td>kiki茶茶谷</td>
+    <td><span class="verdict v-candidate">可考慮跟（候選）</span><div class="small muted">樣本一般</div></td>
+    <td class="num">20</td><td class="num">12-7-1</td>
+    <td class="num pos">+1.92</td>
+    <td class="num">174</td><td class="num pos">13.1%</td><td class="num pos">10.5%</td>
+    <td class="small">Live +1.92u（20 注）+ Backtest ROI +13.1%（174 注，假設賠率 1.85 都唔蝕）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">5</td>
+    <td>HK 港女必勝料</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本一般</div></td>
+    <td class="num">43</td><td class="num">27-15-1</td>
+    <td class="num pos">+1.35</td>
+    <td class="num">414</td><td class="num neg">-3.4%</td><td class="num neg">-5.7%</td>
+    <td class="small">Live +1.35u（43 注）；Backtest ROI -3.4%（414 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">6</td>
+    <td>牛B心水</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本細</div></td>
+    <td class="num">4</td><td class="num">3-1-0</td>
+    <td class="num pos">+1.34</td>
+    <td class="num">106</td><td class="num neg">-3.3%</td><td class="num neg">-5.2%</td>
+    <td class="small">Live 只結算 4 注；Backtest ROI -3.3%（106 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">7</td>
+    <td>AI足球 实时推送</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本細</div></td>
+    <td class="num">3</td><td class="num">2-1-0</td>
+    <td class="num pos">+0.90</td>
+    <td class="num">127</td><td class="num neg">-11.4%</td><td class="num neg">-13.4%</td>
+    <td class="small">Backtest 127 注 ROI -11.4% 長期明顯蝕，Live +0.90u 未足以推翻</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">8</td>
+    <td>悅悅精選推薦<div class="small muted">Live 同單：悅悅精選推薦/快速了解/瑤瑤uu球球（代表：悅悅精選推薦）</div></td>
+    <td><span class="verdict v-candidate">可考慮跟（候選）</span><div class="small muted">樣本一般</div></td>
+    <td class="num">37</td><td class="num">22-15-0</td>
+    <td class="num pos">+0.76</td>
+    <td class="num">250</td><td class="num pos">21.7%</td><td class="num pos">18.9%</td>
+    <td class="small">Live +0.76u（37 注）+ Backtest ROI +21.7%（250 注，假設賠率 1.85 都唔蝕）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">9</td>
+    <td>快速了解<div class="small muted">Live 同單：悅悅精選推薦/快速了解/瑤瑤uu球球（代表：悅悅精選推薦）</div></td>
+    <td><span class="verdict v-candidate">可考慮跟（候選）</span><div class="small muted">樣本一般</div></td>
+    <td class="num">37</td><td class="num">22-15-0</td>
+    <td class="num pos">+0.76</td>
+    <td class="num">404</td><td class="num pos">6.0%</td><td class="num pos">3.5%</td>
+    <td class="small">Live +0.76u（37 注）+ Backtest ROI +6.0%（404 注，假設賠率 1.85 都唔蝕）（同 悅悅精選推薦 出同一批單，只跟代表一個）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">10</td>
+    <td>瑤瑤uu球球<div class="small muted">Live 同單：悅悅精選推薦/快速了解/瑤瑤uu球球（代表：悅悅精選推薦）</div></td>
+    <td><span class="verdict v-candidate">可考慮跟（候選）</span><div class="small muted">樣本一般</div></td>
+    <td class="num">37</td><td class="num">22-15-0</td>
+    <td class="num pos">+0.76</td>
+    <td class="num">558</td><td class="num pos">4.9%</td><td class="num pos">2.4%</td>
+    <td class="small">Live +0.76u（37 注）+ Backtest ROI +4.9%（558 注，假設賠率 1.85 都唔蝕）（同 悅悅精選推薦 出同一批單，只跟代表一個）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">11</td>
+    <td>聞西免費波馬心水AV交流</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本細</div></td>
+    <td class="num">9</td><td class="num">5-4-0</td>
+    <td class="num pos">+0.25</td>
+    <td class="num">141</td><td class="num neg">-12.6%</td><td class="num neg">-12.7%</td>
+    <td class="small">Backtest 141 注 ROI -12.6% 長期明顯蝕，Live +0.25u 未足以推翻</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">12</td>
+    <td>米米足球心水分享</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本細/BT樣本細</div></td>
+    <td class="num">2</td><td class="num">1-1-0</td>
+    <td class="num pos">+0.05</td>
+    <td class="num">22</td><td class="num neg">-30.0%</td><td class="num neg">-31.4%</td>
+    <td class="small">Live 只結算 2 注；Backtest ROI -30.0%（22 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">13</td>
+    <td>十三 初盤tips</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本細</div></td>
+    <td class="num">0</td><td class="num">0-0-0</td>
+    <td class="num ">+0.00</td>
+    <td class="num">186</td><td class="num pos">1.3%</td><td class="num neg">-1.0%</td>
+    <td class="small">Live 未有注；Backtest ROI +1.3%（186 注），1.85 假設下轉負</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">14</td>
+    <td>球場ATM</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本細/BT樣本細</div></td>
+    <td class="num">0</td><td class="num">0-0-0</td>
+    <td class="num ">+0.00</td>
+    <td class="num">20</td><td class="num pos">12.5%</td><td class="num pos">10.0%</td>
+    <td class="small">Live 未有注；Backtest ROI +12.5%（20 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">15</td>
+    <td>張繼聰賭博心水日誌</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本細</div></td>
+    <td class="num">0</td><td class="num">0-0-0</td>
+    <td class="num ">+0.00</td>
+    <td class="num">461</td><td class="num neg">-1.9%</td><td class="num neg">-1.9%</td>
+    <td class="small">休眠：Live 冇注，Backtest 最後出貼 2025-11-12</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">16</td>
+    <td>Football 初盤大隊長<div class="small muted">重疊組合 C03：Football 初盤大隊長/Football 環衛大使（代表：Football 初盤大隊長）</div></td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本細</div></td>
+    <td class="num">0</td><td class="num">0-0-0</td>
+    <td class="num ">+0.00</td>
+    <td class="num">103</td><td class="num pos">22.6%</td><td class="num pos">19.8%</td>
+    <td class="small">休眠：Live 冇注，Backtest 最後出貼 2026-01-04</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">17</td>
+    <td>Football 環衛大使<div class="small muted">重疊組合 C03：Football 初盤大隊長/Football 環衛大使（代表：Football 初盤大隊長）</div></td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本細/BT樣本細</div></td>
+    <td class="num">0</td><td class="num">0-0-0</td>
+    <td class="num ">+0.00</td>
+    <td class="num">66</td><td class="num neg">-1.4%</td><td class="num neg">-3.7%</td>
+    <td class="small">休眠：Live 冇注，Backtest 最後出貼 2025-12-09</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">18</td>
+    <td>世界杯 足球推单 红单预测</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本細</div></td>
+    <td class="num">0</td><td class="num">0-0-0</td>
+    <td class="num ">+0.00</td>
+    <td class="num">160</td><td class="num pos">1.0%</td><td class="num neg">-1.3%</td>
+    <td class="small">Live 只結算 0 注；Backtest ROI +1.0%（160 注），1.85 假設下轉負</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">19</td>
+    <td>上水 2</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本細</div></td>
+    <td class="num">2</td><td class="num">1-1-0</td>
+    <td class="num neg">-0.25</td>
+    <td class="num">196</td><td class="num pos">0.5%</td><td class="num neg">-1.8%</td>
+    <td class="small">Live 只結算 2 注；Backtest ROI +0.5%（196 注），1.85 假設下轉負</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">20</td>
+    <td>球探分析師 獨家猛料</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本細</div></td>
+    <td class="num">17</td><td class="num">9-6-2</td>
+    <td class="num neg">-0.45</td>
+    <td class="num">212</td><td class="num pos">4.9%</td><td class="num pos">2.6%</td>
+    <td class="small">Live -0.45u（17 注）；Backtest ROI +4.9%（212 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">21</td>
+    <td>安迪波馬心水實錄</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本足</div></td>
+    <td class="num">56</td><td class="num">32-23-1</td>
+    <td class="num neg">-0.61</td>
+    <td class="num">543</td><td class="num neg">-4.9%</td><td class="num neg">-7.0%</td>
+    <td class="small">Live -0.61u（56 注）；Backtest ROI -4.9%（543 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">22</td>
+    <td>182体育 足球推单 足球比赛 体育电竞</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本細</div></td>
+    <td class="num">4</td><td class="num">2-2-0</td>
+    <td class="num neg">-0.68</td>
+    <td class="num">270</td><td class="num neg">-0.4%</td><td class="num neg">-2.0%</td>
+    <td class="small">Live 只結算 4 注；Backtest ROI -0.4%（270 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">23</td>
+    <td>心水哥免費心水貼士推薦</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本細</div></td>
+    <td class="num">10</td><td class="num">5-4-1</td>
+    <td class="num neg">-0.98</td>
+    <td class="num">163</td><td class="num pos">0.6%</td><td class="num neg">-1.7%</td>
+    <td class="small">Live -0.98u（10 注）；Backtest ROI +0.6%（163 注），1.85 假設下轉負</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">24</td>
+    <td>馬會波經情報站</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本一般</div></td>
+    <td class="num">23</td><td class="num">12-11-0</td>
+    <td class="num neg">-1.08</td>
+    <td class="num">179</td><td class="num neg">-1.9%</td><td class="num neg">-4.1%</td>
+    <td class="small">Live -1.08u（23 注）；Backtest ROI -1.9%（179 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">25</td>
+    <td>阿拉丁x足球心水</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本細/BT樣本細</div></td>
+    <td class="num">3</td><td class="num">1-2-0</td>
+    <td class="num neg">-1.50</td>
+    <td class="num">16</td><td class="num neg">-16.6%</td><td class="num neg">-18.6%</td>
+    <td class="small">Live 只結算 3 注；Backtest ROI -16.6%（16 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">26</td>
+    <td>曹達華辦案實錄2026</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本足</div></td>
+    <td class="num">56</td><td class="num">32-21-3</td>
+    <td class="num neg">-1.88</td>
+    <td class="num">984</td><td class="num neg">-9.7%</td><td class="num neg">-9.7%</td>
+    <td class="small">Backtest 984 注 ROI -9.7% 長期明顯蝕，Live -1.88u 未足以推翻</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">27</td>
+    <td>足球賽事 KK貼士post區</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本細</div></td>
+    <td class="num">13</td><td class="num">8-5-0</td>
+    <td class="num neg">-1.94</td>
+    <td class="num">151</td><td class="num neg">-5.3%</td><td class="num neg">-7.5%</td>
+    <td class="small">Backtest ROI -5.3% + Live -1.94u 兩邊都蝕</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">28</td>
+    <td>暴龍足球賽馬2026</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本細</div></td>
+    <td class="num">2</td><td class="num">0-2-0</td>
+    <td class="num neg">-2.00</td>
+    <td class="num">691</td><td class="num neg">-7.5%</td><td class="num neg">-7.5%</td>
+    <td class="small">Backtest ROI -7.5% + Live -2.00u 兩邊都蝕</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">29</td>
+    <td>至尊師傅 獨家台</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本足</div></td>
+    <td class="num">55</td><td class="num">27-27-1</td>
+    <td class="num neg">-2.60</td>
+    <td class="num">843</td><td class="num neg">-11.5%</td><td class="num neg">-11.6%</td>
+    <td class="small">Backtest 843 注 ROI -11.5% 長期明顯蝕，Live -2.60u 未足以推翻</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">30</td>
+    <td>瑶姐赛事笔记</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本一般/BT樣本細</div></td>
+    <td class="num">49</td><td class="num">27-21-1</td>
+    <td class="num neg">-2.96</td>
+    <td class="num">42</td><td class="num neg">-7.7%</td><td class="num neg">-9.8%</td>
+    <td class="small">Live -2.96u（49 注）；Backtest ROI -7.7%（42 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">31</td>
+    <td>地盤佬日報</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本足</div></td>
+    <td class="num">53</td><td class="num">26-23-4</td>
+    <td class="num neg">-3.29</td>
+    <td class="num">405</td><td class="num neg">-4.9%</td><td class="num neg">-5.0%</td>
+    <td class="small">Live -3.29u（53 注）；Backtest ROI -4.9%（405 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">32</td>
+    <td>賭俠2026 化骨龍投注紀錄</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本細</div></td>
+    <td class="num">6</td><td class="num">1-4-1</td>
+    <td class="num neg">-3.52</td>
+    <td class="num">207</td><td class="num neg">-6.1%</td><td class="num neg">-6.1%</td>
+    <td class="small">Backtest ROI -6.1% + Live -3.52u 兩邊都蝕</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">33</td>
+    <td>馬屎黑集中營</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本細</div></td>
+    <td class="num">19</td><td class="num">6-11-2</td>
+    <td class="num neg">-4.48</td>
+    <td class="num">405</td><td class="num neg">-5.6%</td><td class="num neg">-7.3%</td>
+    <td class="small">Live 19 注結算 ROI -23.6%（-4.48u），Backtest 亦冇支持（-5.6%）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">34</td>
+    <td>足籃記<div class="small muted">重疊組合 C02：足球精英 友友推薦/足籃記（代表：足籃記）</div></td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本一般</div></td>
+    <td class="num">44</td><td class="num">26-17-1</td>
+    <td class="num neg">-4.98</td>
+    <td class="num">536</td><td class="num pos">0.9%</td><td class="num neg">-1.5%</td>
+    <td class="small">Live -4.98u（44 注）；Backtest ROI +0.9%（536 注），1.85 假設下轉負</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">35</td>
+    <td>大天二猛料心水台</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本一般</div></td>
+    <td class="num">45</td><td class="num">21-23-1</td>
+    <td class="num neg">-5.12</td>
+    <td class="num">695</td><td class="num neg">-6.4%</td><td class="num neg">-6.4%</td>
+    <td class="small">Backtest ROI -6.4% + Live -5.12u 兩邊都蝕</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">36</td>
+    <td>足球精英 友友推薦<div class="small muted">重疊組合 C02：足球精英 友友推薦/足籃記（代表：足籃記）</div></td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本一般</div></td>
+    <td class="num">42</td><td class="num">26-15-1</td>
+    <td class="num neg">-5.62</td>
+    <td class="num">632</td><td class="num neg">-1.0%</td><td class="num neg">-3.4%</td>
+    <td class="small">Live -5.62u（42 注）；Backtest ROI -1.0%（632 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">37</td>
+    <td>小太陽東方紅-紅遍天</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本一般</div></td>
+    <td class="num">31</td><td class="num">12-15-4</td>
+    <td class="num neg">-5.79</td>
+    <td class="num">270</td><td class="num neg">-1.6%</td><td class="num neg">-3.9%</td>
+    <td class="small">Live -5.79u（31 注）；Backtest ROI -1.6%（270 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">38</td>
+    <td>太子馬會出糧 心水推介</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本一般</div></td>
+    <td class="num">23</td><td class="num">10-12-1</td>
+    <td class="num neg">-6.42</td>
+    <td class="num">451</td><td class="num neg">-3.8%</td><td class="num neg">-3.8%</td>
+    <td class="small">Live 23 注結算 ROI -27.9%（-6.42u），Backtest 亦冇支持（-3.8%）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">39</td>
+    <td>晴姐 心水 Tips<div class="small muted">Live 同單：晴姐 心水 Tips/婷姐 心水飛 殺狗會（代表：婷姐 心水飛 殺狗會）</div></td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本足</div></td>
+    <td class="num">75</td><td class="num">36-35-4</td>
+    <td class="num neg">-8.51</td>
+    <td class="num">287</td><td class="num neg">-5.8%</td><td class="num neg">-8.0%</td>
+    <td class="small">Backtest ROI -5.8% + Live -8.51u 兩邊都蝕（同 婷姐 心水飛 殺狗會 出同一批單，只跟代表一個）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">40</td>
+    <td>婷姐 心水飛 殺狗會<div class="small muted">Live 同單：晴姐 心水 Tips/婷姐 心水飛 殺狗會（代表：婷姐 心水飛 殺狗會）</div></td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本足</div></td>
+    <td class="num">75</td><td class="num">36-35-4</td>
+    <td class="num neg">-8.51</td>
+    <td class="num">572</td><td class="num pos">0.9%</td><td class="num neg">-1.5%</td>
+    <td class="small">Live -8.51u（75 注）；Backtest ROI +0.9%（572 注），1.85 假設下轉負</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">41</td>
+    <td>阿木足球心水實錄</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本一般</div></td>
+    <td class="num">31</td><td class="num">10-17-4</td>
+    <td class="num neg">-8.54</td>
+    <td class="num">458</td><td class="num neg">-5.2%</td><td class="num neg">-5.2%</td>
+    <td class="small">Live 31 注結算 ROI -27.5%（-8.54u），Backtest 亦冇支持（-5.2%）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">42</td>
+    <td>師傅討論區</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本足/BT樣本細</div></td>
+    <td class="num">87</td><td class="num">41-42-4</td>
+    <td class="num neg">-9.20</td>
+    <td class="num">0</td><td class="num ">-</td><td class="num ">-</td>
+    <td class="small">Live -9.20u（87 注）；冇 Backtest</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">43</td>
+    <td>2026美加墨世界杯共贏</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本足</div></td>
+    <td class="num">54</td><td class="num">22-28-4</td>
+    <td class="num neg">-12.72</td>
+    <td class="num">894</td><td class="num neg">-8.1%</td><td class="num neg">-10.2%</td>
+    <td class="small">Backtest 894 注 ROI -8.1% 長期明顯蝕，Live -12.72u 未足以推翻</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">44</td>
+    <td>龍心</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本足</div></td>
+    <td class="num">62</td><td class="num">23-37-2</td>
+    <td class="num neg">-15.03</td>
+    <td class="num">703</td><td class="num neg">-4.3%</td><td class="num neg">-4.3%</td>
+    <td class="small">Live 62 注結算 ROI -24.2%（-15.03u），Backtest 亦冇支持（-4.3%）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">45</td>
+    <td>臉子哥 精裝追女仔日記</td>
+    <td><span class="verdict v-watch">繼續觀察</span><div class="small muted">樣本足</div></td>
+    <td class="num">91</td><td class="num">39-51-1</td>
+    <td class="num neg">-15.28</td>
+    <td class="num">1147</td><td class="num neg">-3.1%</td><td class="num neg">-3.1%</td>
+    <td class="small">Live -15.28u（91 注）；Backtest ROI -3.1%（1147 注）</td>
+  </tr>
+  
+  <tr>
+    <td class="muted">46</td>
+    <td>巴西仔心水</td>
+    <td><span class="verdict v-stop">建議降級或剔走</span><div class="small muted">樣本足</div></td>
+    <td class="num">63</td><td class="num">27-33-3</td>
+    <td class="num neg">-18.55</td>
+    <td class="num">631</td><td class="num neg">-7.6%</td><td class="num neg">-7.8%</td>
+    <td class="small">Live 63 注結算 ROI -29.5%（-18.55u），Backtest 亦冇支持（-7.6%）</td>
+  </tr>
+  
+  </tbody>
+</table></div>
+</div>
+
+  </main>
+  <footer class="footer">
+    唯讀 · Live ≠ Backtest（唔會混）· Tipsme 另計 · HKJC u：冇 HKJC 賠率嘅贏波 = 0u · 頻道計分 1u = HK$500（真錢注 1u = HK$200）· SQLite ro · PUBLIC · 頁面時間 2026-11-01 04:53 HKT
+  </footer>
+  <script src="static/sort.js" defer></script>
+<!-- algowise-theme -->
+<script src="static/algowise-theme.js" defer></script>
+</body>
+</html>
