@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <base href="https://algowise-ai.github.io/tg-football-tips/" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>頻道計分 · TG Football Tips</title>
+  <link rel="stylesheet" href="static/style.css" />
+<!-- algowise-theme-head -->
+<script>
+(function(){try{var m=localStorage.getItem("algowise-theme")||"system";
+document.documentElement.setAttribute("data-theme",m);
+var dark=window.matchMedia("(prefers-color-scheme: dark)").matches;
+var r=m==="light"?"light":m==="dark"?"dark":(dark?"dark":"light");
+document.documentElement.setAttribute("data-theme-resolved",r);
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo">⚽</span><span>TG Football Tips</span></div>
+    <nav>
+      <a href="index.html" class="">總覽</a>
+      <a href="channels.html" class="active">頻道計分</a>
+      <a href="profile.html" class="">頻道判斷</a>
+      <a href="copybet.html" class="">跟注飛</a>
+      
+      <a href="fade.html" class="">反買</a>
+      <a href="fade_noise.html" class="">噪音反買</a>
+      <a href="polymarket.html" class="">Polymarket 對比</a>
+      <a href="tipsme.html" class="">Tipsme</a>
+      <a href="api/summary.json" class="muted">API</a>
+    </nav>
+  </header>
+  <main class="container">
+    
+<h1>頻道計分 · 回測 Backtest</h1>
+<div class="tabs">
+  <a href="channels-live-12.html" class="">Live 前瞻</a>
+  <a href="channels-bt-12.html" class="active">Backtest 回測</a>
+  <span class="sep"></span>
+  <a href="channels-bt-1d.html" class="">1 日</a><a href="channels-bt-2d.html" class="">2 日</a><a href="channels-bt-3d.html" class="">3 日</a><a href="channels-bt-4d.html" class="">4 日</a><a href="channels-bt-5d.html" class="">5 日</a><a href="channels-bt-1w.html" class="">1 週</a><a href="channels-bt-2w.html" class="">2 週</a><a href="channels-bt-3w.html" class="">3 週</a><a href="channels-bt-1.html" class="">1 個月</a><a href="channels-bt-3.html" class="">3 個月</a><a href="channels-bt-6.html" class="">6 個月</a><a href="channels-bt-12.html" class="active">12 個月</a><a href="channels-bt-all.html" class="">全部</a>
+</div>
+<div class="panel section" id="scorecard-backtest">
+  
+  <div class="muted small">資料範圍 2025-09-23 00:17 → 2026-09-23 22:41 · 時段 最近 12 個月（按 posted_at）</div>
+  
+  
+<div class="table-wrap"><table class="table">
+  <thead><tr>
+    <th>頻道</th><th class="num">注數</th><th class="num">W-L-P</th><th class="num">勝率</th>
+    <th class="num">u</th><th class="num">HK$</th><th class="num">假設賠率</th><th>首</th><th>尾</th>
+  </tr></thead>
+  <tbody>
+  
+    <tr>
+      <td>悅悅精選推薦⚽️</td>
+      <td class="num">218</td><td class="num">133-73-12</td><td class="num">64.6%</td>
+      
+      <td class="num pos">+40.30</td><td class="num pos">+20,150</td>
+      <td class="num muted">218</td><td class="small muted">2025-11-16</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>瑤瑤uu球球⚽️</td>
+      <td class="num">489</td><td class="num">265-201-23</td><td class="num">56.9%</td>
+      
+      <td class="num pos">+23.00</td><td class="num pos">+11,500</td>
+      <td class="num muted">489</td><td class="small muted">2025-11-16</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>kiki茶茶谷</td>
+      <td class="num">155</td><td class="num">88-56-11</td><td class="num">61.1%</td>
+      
+      <td class="num pos">+20.85</td><td class="num pos">+10,425</td>
+      <td class="num muted">155</td><td class="small muted">2025-11-16</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>快速了解</td>
+      <td class="num">337</td><td class="num">185-136-16</td><td class="num">57.6%</td>
+      
+      <td class="num pos">+19.95</td><td class="num pos">+9,975</td>
+      <td class="num muted">337</td><td class="small muted">2025-11-16</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>十三⚽️🏀初盤tips️️🇭🇰</td>
+      <td class="num">99</td><td class="num">56-37-6</td><td class="num">60.2%</td>
+      
+      <td class="num pos">+12.40</td><td class="num pos">+6,200</td>
+      <td class="num muted">99</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-09</td>
+      
+    </tr>
+  
+    <tr>
+      <td>Football ⚽️初盤大隊長</td>
+      <td class="num">67</td><td class="num">43-20-4</td><td class="num">68.3%</td>
+      
+      <td class="num pos">+11.55</td><td class="num pos">+5,775</td>
+      <td class="num muted">67</td><td class="small muted">2025-11-15</td><td class="small muted">2026-01-04</td>
+      
+    </tr>
+  
+    <tr>
+      <td>上水⚽️🎣🦀🐋2</td>
+      <td class="num">106</td><td class="num">59-42-5</td><td class="num">58.4%</td>
+      
+      <td class="num pos">+11.50</td><td class="num pos">+5,750</td>
+      <td class="num muted">106</td><td class="small muted">2025-11-15</td><td class="small muted">2026-08-08</td>
+      
+    </tr>
+  
+    <tr>
+      <td>球探分析師｜獨家猛料</td>
+      <td class="num">212</td><td class="num">111-86-15</td><td class="num">56.3%</td>
+      
+      <td class="num pos">+10.45</td><td class="num pos">+5,225</td>
+      <td class="num muted">211</td><td class="small muted">2026-02-24</td><td class="small muted">2026-09-17</td>
+      
+    </tr>
+  
+    <tr>
+      <td>世界杯 足球推单 红单预测</td>
+      <td class="num">140</td><td class="num">72-58-10</td><td class="num">55.4%</td>
+      
+      <td class="num pos">+6.86</td><td class="num pos">+3,430</td>
+      <td class="num muted">138</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-20</td>
+      
+    </tr>
+  
+    <tr>
+      <td>Football 環衛大使 ⚽️</td>
+      <td class="num">37</td><td class="num">22-13-2</td><td class="num">62.9%</td>
+      
+      <td class="num pos">+4.60</td><td class="num pos">+2,300</td>
+      <td class="num muted">37</td><td class="small muted">2025-11-15</td><td class="small muted">2025-12-09</td>
+      
+    </tr>
+  
+    <tr>
+      <td>足籃記</td>
+      <td class="num">479</td><td class="num">262-206-11</td><td class="num">56.0%</td>
+      
+      <td class="num pos">+4.55</td><td class="num pos">+2,275</td>
+      <td class="num muted">479</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-20</td>
+      
+    </tr>
+  
+    <tr>
+      <td>婷姐【心水飛】殺狗會</td>
+      <td class="num">509</td><td class="num">267-221-21</td><td class="num">54.7%</td>
+      
+      <td class="num pos">+2.45</td><td class="num pos">+1,225</td>
+      <td class="num muted">509</td><td class="small muted">2025-11-16</td><td class="small muted">2026-09-18</td>
+      
+    </tr>
+  
+    <tr>
+      <td>182体育 足球推单 🫥 足球比赛 体育电竞</td>
+      <td class="num">247</td><td class="num">131-109-7</td><td class="num">54.6%</td>
+      
+      <td class="num pos">+1.36</td><td class="num pos">+680</td>
+      <td class="num muted">186</td><td class="small muted">2025-11-22</td><td class="small muted">2026-09-17</td>
+      
+    </tr>
+  
+    <tr>
+      <td>心水哥免費心水貼士推薦</td>
+      <td class="num">163</td><td class="num">83-69-11</td><td class="num">54.6%</td>
+      
+      <td class="num pos">+0.95</td><td class="num pos">+475</td>
+      <td class="num muted">163</td><td class="small muted">2026-04-30</td><td class="small muted">2026-09-22</td>
+      
+    </tr>
+  
+    <tr>
+      <td>球場ATM</td>
+      <td class="num">4</td><td class="num">2-2-0</td><td class="num">50.0%</td>
+      
+      <td class="num neg">-0.20</td><td class="num neg">-100</td>
+      <td class="num muted">4</td><td class="small muted">2025-12-09</td><td class="small muted">2026-08-30</td>
+      
+    </tr>
+  
+    <tr>
+      <td>太子馬會出糧🉐｜心水推介</td>
+      <td class="num">422</td><td class="num">219-184-19</td><td class="num">54.3%</td>
+      
+      <td class="num neg">-1.85</td><td class="num neg">-925</td>
+      <td class="num muted">2</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>🔥牛B心水🔥</td>
+      <td class="num">93</td><td class="num">47-45-1</td><td class="num">51.1%</td>
+      
+      <td class="num neg">-2.51</td><td class="num neg">-1,255</td>
+      <td class="num muted">79</td><td class="small muted">2025-11-22</td><td class="small muted">2026-09-17</td>
+      
+    </tr>
+  
+    <tr>
+      <td>💡阿拉丁x足球心水💡</td>
+      <td class="num">16</td><td class="num">7-9-0</td><td class="num">43.8%</td>
+      
+      <td class="num neg">-2.65</td><td class="num neg">-1,325</td>
+      <td class="num muted">16</td><td class="small muted">2025-11-17</td><td class="small muted">2026-09-16</td>
+      
+    </tr>
+  
+    <tr>
+      <td>瑶姐赛事笔记</td>
+      <td class="num">42</td><td class="num">21-20-1</td><td class="num">51.2%</td>
+      
+      <td class="num neg">-3.25</td><td class="num neg">-1,625</td>
+      <td class="num muted">42</td><td class="small muted">2026-08-28</td><td class="small muted">2026-09-22</td>
+      
+    </tr>
+  
+    <tr>
+      <td>馬會波經情報站 📈</td>
+      <td class="num">179</td><td class="num">89-80-10</td><td class="num">52.7%</td>
+      
+      <td class="num neg">-3.43</td><td class="num neg">-1,715</td>
+      <td class="num muted">173</td><td class="small muted">2026-03-19</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>足球精英⚽️友友推薦</td>
+      <td class="num">546</td><td class="num">292-241-13</td><td class="num">54.8%</td>
+      
+      <td class="num neg">-4.65</td><td class="num neg">-2,325</td>
+      <td class="num muted">546</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-20</td>
+      
+    </tr>
+  
+    <tr>
+      <td>港澳台珠三角心水料</td>
+      <td class="num">148</td><td class="num">74-65-9</td><td class="num">53.2%</td>
+      
+      <td class="num neg">-5.40</td><td class="num neg">-2,700</td>
+      <td class="num muted">148</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>⚽️💓米米足球心水分享💓⚽️🎖</td>
+      <td class="num">22</td><td class="num">7-15-0</td><td class="num">31.8%</td>
+      
+      <td class="num neg">-6.60</td><td class="num neg">-3,300</td>
+      <td class="num muted">22</td><td class="small muted">2026-01-15</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>小太陽東方紅-紅遍天</td>
+      <td class="num">217</td><td class="num">108-100-9</td><td class="num">51.9%</td>
+      
+      <td class="num neg">-6.80</td><td class="num neg">-3,400</td>
+      <td class="num muted">217</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-22</td>
+      
+    </tr>
+  
+    <tr>
+      <td>足球賽事⚽️KK貼士post區🇭🇰</td>
+      <td class="num">151</td><td class="num">70-71-10</td><td class="num">49.6%</td>
+      
+      <td class="num neg">-8.00</td><td class="num neg">-4,000</td>
+      <td class="num muted">151</td><td class="small muted">2026-06-12</td><td class="small muted">2026-09-21</td>
+      
+    </tr>
+  
+    <tr>
+      <td>@landguygamble</td>
+      <td class="num">336</td><td class="num">166-152-18</td><td class="num">52.2%</td>
+      
+      <td class="num neg">-8.09</td><td class="num neg">-4,045</td>
+      <td class="num muted">10</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-21</td>
+      
+    </tr>
+  
+    <tr>
+      <td>馬屎黑集中營🖤</td>
+      <td class="num">305</td><td class="num">143-144-18</td><td class="num">49.8%</td>
+      
+      <td class="num neg">-11.38</td><td class="num neg">-5,690</td>
+      <td class="num muted">231</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-21</td>
+      
+    </tr>
+  
+    <tr>
+      <td>AI足球⚡️ 实时推送</td>
+      <td class="num">127</td><td class="num">53-62-12</td><td class="num">46.1%</td>
+      
+      <td class="num neg">-14.50</td><td class="num neg">-7,250</td>
+      <td class="num muted">127</td><td class="small muted">2026-01-31</td><td class="small muted">2026-09-21</td>
+      
+    </tr>
+  
+    <tr>
+      <td>奶龍哥 心水⚽️</td>
+      <td class="num">254</td><td class="num">125-122-7</td><td class="num">50.6%</td>
+      
+      <td class="num neg">-15.14</td><td class="num neg">-7,570</td>
+      <td class="num muted">69</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-22</td>
+      
+    </tr>
+  
+    <tr>
+      <td>HK🇭🇰 港女必勝料</td>
+      <td class="num">351</td><td class="num">182-161-8</td><td class="num">53.1%</td>
+      
+      <td class="num neg">-15.75</td><td class="num neg">-7,875</td>
+      <td class="num muted">351</td><td class="small muted">2025-11-18</td><td class="small muted">2026-09-22</td>
+      
+    </tr>
+  
+    <tr>
+      <td>阿木足球心水實錄✍🏻</td>
+      <td class="num">389</td><td class="num">186-173-30</td><td class="num">51.8%</td>
+      
+      <td class="num neg">-15.99</td><td class="num neg">-7,995</td>
+      <td class="num muted">0</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-21</td>
+      
+    </tr>
+  
+    <tr>
+      <td>晴姐•心水•Tips🇭🇰</td>
+      <td class="num">287</td><td class="num">144-134-9</td><td class="num">51.8%</td>
+      
+      <td class="num neg">-16.55</td><td class="num neg">-8,275</td>
+      <td class="num muted">287</td><td class="small muted">2025-11-17</td><td class="small muted">2026-09-21</td>
+      
+    </tr>
+  
+    <tr>
+      <td>聞西免費波馬心水AV交流</td>
+      <td class="num">139</td><td class="num">57-72-10</td><td class="num">44.2%</td>
+      
+      <td class="num neg">-18.17</td><td class="num neg">-9,085</td>
+      <td class="num muted">10</td><td class="small muted">2025-12-07</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>賭俠2026•化骨龍投注紀錄</td>
+      <td class="num">137</td><td class="num">58-75-4</td><td class="num">43.6%</td>
+      
+      <td class="num neg">-19.66</td><td class="num neg">-9,830</td>
+      <td class="num muted">2</td><td class="small muted">2025-11-18</td><td class="small muted">2026-09-19</td>
+      
+    </tr>
+  
+    <tr>
+      <td>@boyboyboytips</td>
+      <td class="num">581</td><td class="num">287-291-3</td><td class="num">49.7%</td>
+      
+      <td class="num neg">-21.57</td><td class="num neg">-10,785</td>
+      <td class="num muted">3</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-21</td>
+      
+    </tr>
+  
+    <tr>
+      <td>⚽️大天二猛料心水台💦</td>
+      <td class="num">570</td><td class="num">276-266-28</td><td class="num">50.9%</td>
+      
+      <td class="num neg">-25.27</td><td class="num neg">-12,635</td>
+      <td class="num muted">1</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>安迪波馬心水實錄</td>
+      <td class="num">479</td><td class="num">240-215-24</td><td class="num">52.7%</td>
+      
+      <td class="num neg">-28.40</td><td class="num neg">-14,200</td>
+      <td class="num muted">479</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>臉子哥✨精裝追女仔日記✨</td>
+      <td class="num">975</td><td class="num">460-466-49</td><td class="num">49.7%</td>
+      
+      <td class="num neg">-35.57</td><td class="num neg">-17,785</td>
+      <td class="num muted">15</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>🇧🇷巴西仔心水🇧🇷</td>
+      <td class="num">605</td><td class="num">266-299-40</td><td class="num">47.1%</td>
+      
+      <td class="num neg">-39.31</td><td class="num neg">-19,655</td>
+      <td class="num muted">54</td><td class="small muted">2025-11-16</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>暴龍足球賽馬2026🦖</td>
+      <td class="num">530</td><td class="num">238-275-17</td><td class="num">46.4%</td>
+      
+      <td class="num neg">-41.62</td><td class="num neg">-20,810</td>
+      <td class="num muted">6</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-14</td>
+      
+    </tr>
+  
+    <tr>
+      <td>🇫🇷法國佬．波馬心水分享🟢</td>
+      <td class="num">508</td><td class="num">246-242-20</td><td class="num">50.4%</td>
+      
+      <td class="num neg">-47.25</td><td class="num neg">-23,625</td>
+      <td class="num muted">2</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>2026美加墨世界杯共贏🇭🇰</td>
+      <td class="num">894</td><td class="num">410-429-55</td><td class="num">48.9%</td>
+      
+      <td class="num neg">-72.35</td><td class="num neg">-36,175</td>
+      <td class="num muted">894</td><td class="small muted">2026-02-28</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+    <tr>
+      <td>🐯曹達華辦案實錄2026⚽️🐴</td>
+      <td class="num">702</td><td class="num">318-355-29</td><td class="num">47.3%</td>
+      
+      <td class="num neg">-76.00</td><td class="num neg">-38,000</td>
+      <td class="num muted">6</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-21</td>
+      
+    </tr>
+  
+    <tr>
+      <td>至尊師傅🌸獨家台</td>
+      <td class="num">698</td><td class="num">318-370-10</td><td class="num">46.2%</td>
+      
+      <td class="num neg">-83.33</td><td class="num neg">-41,665</td>
+      <td class="num muted">4</td><td class="small muted">2025-11-15</td><td class="small muted">2026-09-23</td>
+      
+    </tr>
+  
+  </tbody>
+  <tfoot>
+    
+    <tr>
+      <th>合計 TOTAL</th><th class="num">13965</th><th class="num">6886-6462-617</th><th class="num">51.6%</th>
+      
+      <th class="num neg">-480.50</th><th class="num">-240,250</th><th class="num">7145</th><th></th><th></th>
+      
+    </tr>
+  </tfoot>
+</table></div>
+
+  <div class="note">
+  Backtest：bt_picks counted=1（獨立 HKJC 賽果評分、賽前）；冇真實賠率就假設 1.90（「假設賠率」欄 = 用咗假設嘅注數）。
+  </div>
+</div>
+
+  </main>
+  <footer class="footer">
+    唯讀 · Live ≠ Backtest（唔會混）· Tipsme 另計 · HKJC u：冇 HKJC 賠率嘅贏波 = 0u · 頻道計分 1u = HK$500（真錢注 1u = HK$200）· SQLite ro · PUBLIC · 頁面時間 2026-11-15 03:16 HKT
+  </footer>
+  <script src="static/sort.js" defer></script>
+<!-- algowise-theme -->
+<script src="static/algowise-theme.js" defer></script>
+</body>
+</html>

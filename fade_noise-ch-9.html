@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <base href="https://algowise-ai.github.io/tg-football-tips/" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>噪音反買 · TG Football Tips</title>
+  <link rel="stylesheet" href="static/style.css" />
+<!-- algowise-theme-head -->
+<script>
+(function(){try{var m=localStorage.getItem("algowise-theme")||"system";
+document.documentElement.setAttribute("data-theme",m);
+var dark=window.matchMedia("(prefers-color-scheme: dark)").matches;
+var r=m==="light"?"light":m==="dark"?"dark":(dark?"dark":"light");
+document.documentElement.setAttribute("data-theme-resolved",r);
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo">⚽</span><span>TG Football Tips</span></div>
+    <nav>
+      <a href="index.html" class="">總覽</a>
+      <a href="channels.html" class="">頻道計分</a>
+      <a href="profile.html" class="">頻道判斷</a>
+      <a href="copybet.html" class="">跟注飛</a>
+      
+      <a href="fade.html" class="">反買</a>
+      <a href="fade_noise.html" class="active">噪音反買</a>
+      <a href="polymarket.html" class="">Polymarket 對比</a>
+      <a href="tipsme.html" class="">Tipsme</a>
+      <a href="api/summary.json" class="muted">API</a>
+    </nav>
+  </header>
+  <main class="container">
+    
+<h1>噪音反買（PAPER 模擬）</h1>
+
+
+
+
+<div class="tabs" id="channel-filter">
+  <a href="fade_noise.html" class="">全部（223）</a>
+  
+  <a href="fade_noise-ch-10.html" class="">巴西仔（2）</a>
+  
+  <a href="fade_noise-ch-5.html" class="">臉子哥（58）</a>
+  
+  <a href="fade_noise-ch-296.html" class="">美加墨共贏（44）</a>
+  
+  <a href="fade_noise-ch-18.html" class="">太子（6）</a>
+  
+  <a href="fade_noise-ch-6.html" class="">阿木（20）</a>
+  
+  <a href="fade_noise-ch-31.html" class="">boyboyboytips（25）</a>
+  
+  <a href="fade_noise-ch-9.html" class="active">大天二（15）</a>
+  
+  <a href="fade_noise-ch-19.html" class="">小太陽（14）</a>
+  
+  <a href="fade_noise-ch-34.html" class="">瑶姐（17）</a>
+  
+  <a href="fade_noise-ch-30.html" class="">landguygamble（22）</a>
+  
+</div>
+
+<div class="note" style="margin-top:-0.4rem;margin-bottom:0.8rem">已篩選頻道：<b>大天二</b> · 下方卡牌／飛表／累計只計此頻道（分析用）</div>
+
+<div class="note" style="margin-top:0"><b>PAPER 模擬，唔落注、唔推送 Telegram。</b>反買 Live 噪音五頻道（巴西仔／臉子哥／美加墨／太子／阿木）同一池同一線對面；平注 HK$200；起始本金 HK$10,000（1u = HK$200）。獨立 table <code>fade_noise</code>，唔同 classic <a href="fade.html">反買·至尊／曹達華</a>／跟注飛。由 2026-10-15 09:20 起。</div>
+<div class="cards" id="risk">
+  <div class="card"><div class="label">本金</div><div class="value">9,488</div><div class="sub">起始 10,000 · 未結注 400</div></div>
+  <div class="card"><div class="label">每注</div><div class="value">200</div><div class="sub">平注 · 1u = HK$200</div></div>
+  <div class="card"><div class="label">記錄</div><div class="value">15</div><div class="sub">未結 2 · 已結 13</div></div>
+  <div class="card"><div class="label">已結 贏/輸/走</div><div class="value">6/7/0</div><div class="sub">命中 46.2%</div></div>
+  <div class="card"><div class="label">累計盈虧</div><div class="value neg">-512</div><div class="sub">-2.56u · ROI -19.7%</div></div>
+  <div class="card"><div class="label">新飛</div><div class="value pos">可以</div><div class="sub">sleeve 開啟</div></div>
+</div>
+
+
+
+
+<div class="panel section" id="slips-open"><h2>今日 / 未結</h2>
+
+<div class="table-wrap"><table class="table compact dense"><thead><tr>
+  <th>N#</th><th>記錄時間</th><th>頻道</th><th>場次／開賽</th><th>賽事</th><th>貼士方</th><th>反買方</th>
+  <th class="num">反買賠率</th><th class="num">平注</th><th>結果</th><th class="num">平注盈虧</th><th class="num">u</th><th>結算</th>
+</tr></thead><tbody>
+<tr>
+  <td>218 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-14 23:01:30">11-14 23:01</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-15 04:00:00">FB8892<span class="sub2">開賽 11-15 04:00</span></td>
+  <td class="wrap">奧維多 對 基羅納</td>
+  <td class="wrap small">入球大細：大 [2.5] @2.02</td>
+  <td class="wrap">細 [2.5]</td>
+  <td class="num">1.70</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="open"><span class="status open">未結</span></td>
+  <td class="num ">-</td>
+  <td class="num">-</td>
+  <td class="wrap-wide small muted"></td>
+</tr><tr>
+  <td>217 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-14 23:01:30">11-14 23:01</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-15 03:45:00">FB8868<span class="sub2">開賽 11-15 03:45</span></td>
+  <td class="wrap">奧地利 對 愛爾蘭</td>
+  <td class="wrap small">入球大細：大 [2.5] @1.82</td>
+  <td class="wrap">細 [2.5]</td>
+  <td class="num">1.88</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="open"><span class="status open">未結</span></td>
+  <td class="num ">-</td>
+  <td class="num">-</td>
+  <td class="wrap-wide small muted"></td>
+</tr>
+</tbody></table></div>
+
+</div>
+<div class="panel section" id="slips-history"><h2>歷史（全部 篩選後 記錄）</h2>
+
+
+<div class="table-wrap"><table class="table compact dense"><thead><tr>
+  <th>N#</th><th>記錄時間</th><th>頻道</th><th>場次／開賽</th><th>賽事</th><th>貼士方</th><th>反買方</th>
+  <th class="num">反買賠率</th><th class="num">平注</th><th>結果</th><th class="num">平注盈虧</th><th class="num">u</th><th>結算</th>
+</tr></thead><tbody>
+<tr>
+  <td>218 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-14 23:01:30">11-14 23:01</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-15 04:00:00">FB8892<span class="sub2">開賽 11-15 04:00</span></td>
+  <td class="wrap">奧維多 對 基羅納</td>
+  <td class="wrap small">入球大細：大 [2.5] @2.02</td>
+  <td class="wrap">細 [2.5]</td>
+  <td class="num">1.70</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="open"><span class="status open">未結</span></td>
+  <td class="num ">-</td>
+  <td class="num">-</td>
+  <td class="wrap-wide small muted"></td>
+</tr><tr>
+  <td>217 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-14 23:01:30">11-14 23:01</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-15 03:45:00">FB8868<span class="sub2">開賽 11-15 03:45</span></td>
+  <td class="wrap">奧地利 對 愛爾蘭</td>
+  <td class="wrap small">入球大細：大 [2.5] @1.82</td>
+  <td class="wrap">細 [2.5]</td>
+  <td class="num">1.88</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="open"><span class="status open">未結</span></td>
+  <td class="num ">-</td>
+  <td class="num">-</td>
+  <td class="wrap-wide small muted"></td>
+</tr><tr>
+  <td>212 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-14 02:35:08">11-14 02:35</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-14 03:45:00">FB8795<span class="sub2">開賽 11-14 03:45</span></td>
+  <td class="wrap">保加利亞 對 冰島</td>
+  <td class="wrap small">入球大細：大 [2.5] @1.97</td>
+  <td class="wrap">細 [2.5]</td>
+  <td class="num">1.74</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="lost"><span class="status lost">輸</span></td>
+  <td class="num neg">-200</td>
+  <td class="num">-1.00</td>
+  <td class="wrap-wide small muted">score: HKJC FB8795 FT 0-5; line 2.5 under -&gt; lost</td>
+</tr><tr>
+  <td>211 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-14 02:35:08">11-14 02:35</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-14 03:45:00">FB8785<span class="sub2">開賽 11-14 03:45</span></td>
+  <td class="wrap">斯洛文尼亞 對 瑞士</td>
+  <td class="wrap small">入球大細：大 [2/2.5] @2.10</td>
+  <td class="wrap">細 [2/2.5]</td>
+  <td class="num">1.65</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="won"><span class="status won">贏</span></td>
+  <td class="num pos">+130</td>
+  <td class="num">+0.65</td>
+  <td class="wrap-wide small muted">score: HKJC FB8785 FT 0-0; line 2/2.5 under -&gt; won</td>
+</tr><tr>
+  <td>210 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-14 02:35:08">11-14 02:35</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-14 03:30:00">FB8787<span class="sub2">開賽 11-14 03:30</span></td>
+  <td class="wrap">雷加利斯 對 貝高斯</td>
+  <td class="wrap small">入球大細：大 [2/2.5] @1.94</td>
+  <td class="wrap">細 [2/2.5]</td>
+  <td class="num">1.76</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="lost"><span class="status lost">輸</span></td>
+  <td class="num neg">-200</td>
+  <td class="num">-1.00</td>
+  <td class="wrap-wide small muted">score: HKJC FB8787 FT 3-1; line 2/2.5 under -&gt; lost</td>
+</tr><tr>
+  <td>209 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-14 02:35:08">11-14 02:35</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-14 03:00:00">FB8865<span class="sub2">開賽 11-14 03:00</span></td>
+  <td class="wrap">馬里 對 盧旺達</td>
+  <td class="wrap small">入球大細：大 [2.5] @1.93</td>
+  <td class="wrap">細 [2.5]</td>
+  <td class="num">1.77</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="lost"><span class="status lost">輸</span></td>
+  <td class="num neg">-200</td>
+  <td class="num">-1.00</td>
+  <td class="wrap-wide small muted">score: HKJC FB8865 FT 3-2; line 2.5 under -&gt; lost</td>
+</tr><tr>
+  <td>204 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-13 22:20:04">11-13 22:20</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-14 00:00:00">FB8848<span class="sub2">開賽 11-14 00:00</span></td>
+  <td class="wrap">突尼西亞 對 利比亞</td>
+  <td class="wrap small">入球大細：大 [2.5] @2.04</td>
+  <td class="wrap">細 [2.5]</td>
+  <td class="num">1.69</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="won"><span class="status won">贏</span></td>
+  <td class="num pos">+138</td>
+  <td class="num">+0.69</td>
+  <td class="wrap-wide small muted">score: HKJC FB8848 FT 0-2; line 2.5 under -&gt; won</td>
+</tr><tr>
+  <td>203 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-13 22:20:04">11-13 22:20</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-14 00:00:00">FB8831<span class="sub2">開賽 11-14 00:00</span></td>
+  <td class="wrap">尼日利亞 對 坦桑尼亞</td>
+  <td class="wrap small">半場入球大細：大 [1.5] @2.25</td>
+  <td class="wrap">細 [1.5]</td>
+  <td class="num">1.57</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="lost"><span class="status lost">輸</span></td>
+  <td class="num neg">-200</td>
+  <td class="num">-1.00</td>
+  <td class="wrap-wide small muted">score: HKJC FB8831 HT 1-1; line 1.5 under -&gt; lost</td>
+</tr><tr>
+  <td>178 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-11 14:57:51">11-11 14:57</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-11 18:00:00">FB8717<span class="sub2">開賽 11-11 18:00</span></td>
+  <td class="wrap">神戶勝利船 對 町田澤維亞</td>
+  <td class="wrap small">讓球：主 神戶勝利船 [0/-0.5] @2.05</td>
+  <td class="wrap">客 町田澤維亞 [0/+0.5]</td>
+  <td class="num">1.74</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="won"><span class="status won">贏</span></td>
+  <td class="num pos">+148</td>
+  <td class="num">+0.74</td>
+  <td class="wrap-wide small muted">score: HKJC FB8717 FT 0-1; line 0/+0.5 away -&gt; won</td>
+</tr><tr>
+  <td>177 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-11 14:57:51">11-11 14:57</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-11 18:00:00">FB8716<span class="sub2">開賽 11-11 18:00</span></td>
+  <td class="wrap">川崎前鋒 對 柏雷素爾</td>
+  <td class="wrap small">讓球：主 川崎前鋒 [0/+0.5] @1.83</td>
+  <td class="wrap">客 柏雷素爾 [0/-0.5]</td>
+  <td class="num">1.93</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="won"><span class="status won">贏</span></td>
+  <td class="num pos">+186</td>
+  <td class="num">+0.93</td>
+  <td class="wrap-wide small muted">score: HKJC FB8716 FT 1-2; line -0.5/0 away -&gt; won</td>
+</tr><tr>
+  <td>169 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-11-09 22:33:44">11-09 22:33</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-11-10 02:00:00">FB8682<span class="sub2">開賽 11-10 02:00</span></td>
+  <td class="wrap">馬德里體育會女足 對 利雲特巴達隆拿女足</td>
+  <td class="wrap small">半場入球大細：大 [1.5] @2.08</td>
+  <td class="wrap">細 [1.5]</td>
+  <td class="num">1.66</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="won"><span class="status won">贏</span></td>
+  <td class="num pos">+132</td>
+  <td class="num">+0.66</td>
+  <td class="wrap-wide small muted">score: HKJC FB8682 HT 0-0; line 1.5 under -&gt; won</td>
+</tr><tr>
+  <td>52 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-10-25 18:54:39">10-25 18:54</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-10-25 21:00:00">FB7637<span class="sub2">開賽 10-25 21:00</span></td>
+  <td class="wrap">畢爾包 對 基達菲</td>
+  <td class="wrap small">讓球：主 畢爾包 [-1] @1.92</td>
+  <td class="wrap">客 基達菲 [+1]</td>
+  <td class="num">1.88</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="lost"><span class="status lost">輸</span></td>
+  <td class="num neg">-200</td>
+  <td class="num">-1.00</td>
+  <td class="wrap-wide small muted">score: HKJC FB7637 FT 4-0; line +1 away -&gt; lost</td>
+</tr><tr>
+  <td>49 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-10-24 19:37:32">10-24 19:37</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-10-24 20:00:00">FB7448<span class="sub2">開賽 10-24 20:00</span></td>
+  <td class="wrap">華歷簡奴 對 艾爾切</td>
+  <td class="wrap small">讓球：客 艾爾切 [+0.5/+1] @1.91</td>
+  <td class="wrap">主 華歷簡奴 [-0.5/-1]</td>
+  <td class="num">1.89</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="lost"><span class="status lost">輸</span></td>
+  <td class="num neg">-200</td>
+  <td class="num">-1.00</td>
+  <td class="wrap-wide small muted">score: HKJC FB7448 FT 0-3; line -1/-0.5 home -&gt; lost</td>
+</tr><tr>
+  <td>41 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-10-23 22:57:35">10-23 22:57</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-10-24 03:00:00">FB7408<span class="sub2">開賽 10-24 03:00</span></td>
+  <td class="wrap">艾拉維斯 對 馬拉加</td>
+  <td class="wrap small">讓球：主 艾拉維斯 [-1] @2.04</td>
+  <td class="wrap">客 馬拉加 [+1]</td>
+  <td class="num">1.77</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="won"><span class="status won">贏</span></td>
+  <td class="num pos">+154</td>
+  <td class="num">+0.77</td>
+  <td class="wrap-wide small muted">score: HKJC FB7408 FT 1-1; line +1 away -&gt; won</td>
+</tr><tr>
+  <td>31 <span class="tag">paper</span></td>
+  <td class="nowrap small" data-sort="2026-10-22 22:53:51">10-22 22:53</td>
+  <td class="nowrap">大天二</td>
+  <td class="nowrap small" data-sort="2026-10-23 00:45:00">FB7332<span class="sub2">開賽 10-23 00:45</span></td>
+  <td class="wrap">祖雲達斯 對 雷恩</td>
+  <td class="wrap small">入球大細：大 [3/3.5] @2.05</td>
+  <td class="wrap">細 [3/3.5]</td>
+  <td class="num">1.68</td>
+  <td class="num">200</td>
+  <td class="nowrap" data-sort="lost"><span class="status lost">輸</span></td>
+  <td class="num neg">-200</td>
+  <td class="num">-1.00</td>
+  <td class="wrap-wide small muted">score: HKJC FB7332 FT 2-2; line 3/3.5 under -&gt; lost</td>
+</tr>
+</tbody></table></div>
+
+
+
+</div>
+
+<div class="note">分析頁（公平賠率／冷手／classic soft-pause）仍喺 <a href="fade.html">反買</a>；呢頁係噪音 sleeve 嘅跟注飛式主介面。</div>
+
+
+  </main>
+  <footer class="footer">
+    唯讀 · Live ≠ Backtest（唔會混）· Tipsme 另計 · HKJC u：冇 HKJC 賠率嘅贏波 = 0u · 頻道計分 1u = HK$500（真錢注 1u = HK$200）· SQLite ro · PUBLIC · 頁面時間 2026-11-15 03:16 HKT
+  </footer>
+  <script src="static/sort.js" defer></script>
+<!-- algowise-theme -->
+<script src="static/algowise-theme.js" defer></script>
+</body>
+</html>

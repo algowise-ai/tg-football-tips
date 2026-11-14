@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <base href="https://algowise-ai.github.io/tg-football-tips/" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>跟注飛 · TG Football Tips</title>
+  <link rel="stylesheet" href="static/style.css" />
+<!-- algowise-theme-head -->
+<script>
+(function(){try{var m=localStorage.getItem("algowise-theme")||"system";
+document.documentElement.setAttribute("data-theme",m);
+var dark=window.matchMedia("(prefers-color-scheme: dark)").matches;
+var r=m==="light"?"light":m==="dark"?"dark":(dark?"dark":"light");
+document.documentElement.setAttribute("data-theme-resolved",r);
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo">⚽</span><span>TG Football Tips</span></div>
+    <nav>
+      <a href="index.html" class="">總覽</a>
+      <a href="channels.html" class="">頻道計分</a>
+      <a href="profile.html" class="">頻道判斷</a>
+      <a href="copybet.html" class="active">跟注飛</a>
+      
+      <a href="fade.html" class="">反買</a>
+      <a href="fade_noise.html" class="">噪音反買</a>
+      <a href="polymarket.html" class="">Polymarket 對比</a>
+      <a href="tipsme.html" class="">Tipsme</a>
+      <a href="api/summary.json" class="muted">API</a>
+    </nav>
+  </header>
+  <main class="container">
+    
+<h1>跟注飛（PAPER 模擬）</h1>
+
+
+
+<div class="tabs" id="channel-filter">
+  <a href="copybet.html" class="">全部（88）</a>
+  
+  <a href="copybet-ch-23.html" class="">足球精英⚽️友友推薦（27）</a>
+  
+  <a href="copybet-ch-33.html" class="">足籃記（25）</a>
+  
+  <a href="copybet-ch-16.html" class="">奶龍哥 心水⚽️（22）</a>
+  
+  <a href="copybet-ch-41.html" class="active">悅悅精選推薦⚽️（14）</a>
+  
+</div>
+
+<div class="note" style="margin-top:-0.4rem;margin-bottom:0.8rem">已篩選頻道：<b>悅悅精選推薦⚽️</b> · 飛表／累計／本金曲線只計此頻道；上方「今日飛／新飛」額度仍係全帳戶風控</div>
+
+<div class="cards" id="risk">
+  <div class="card"><div class="label">本金</div><div class="value">9,008</div><div class="sub">起始 10,000 · 未結注 400</div></div>
+  <div class="card"><div class="label">今日飛</div><div class="value">0/20</div><div class="sub">剩 20</div></div>
+  <div class="card"><div class="label">今日已結</div><div class="value ">+0</div><div class="sub">日蝕上限 -600</div></div>
+  <div class="card"><div class="label">全停線</div><div class="value">2,800</div><div class="sub">未觸發</div></div>
+  <div class="card"><div class="label">新飛</div><div class="value pos">可以</div><div class="sub">風控正常</div></div>
+  <div class="card"><div class="label">累計</div><div class="value neg">-63</div><div class="sub">13 張已結 · 命中 53.8%</div></div>
+</div>
+
+
+<div class="cards" id="shadows" style="margin-top:0.6rem">
+  
+  <div class="card"><div class="label">Shadow A 傷停門（paper）</div>
+    <div class="value neg">-336</div>
+    <div class="sub">76 已結 / 78 張 · 開 2 · 命中 53.3%</div></div>
+  
+  <div class="card"><div class="label">Shadow B 盤口確認（paper）</div>
+    <div class="value neg">-1,679</div>
+    <div class="sub">58 已結 / 59 張 · 開 1 · 命中 47.4%</div></div>
+  
+</div>
+
+<div class="note">每張 HK$200（1u = HK$200；10-06 至 10-19 半注 HK$100、日蝕 HK$300、本金 ≤ HK$3,400 全停；10-20 起 HK$200、日蝕 HK$600、≤ HK$2,800 全停） · 賠率 ≥ 1.7、唔差過貼士賠率 0.1 以上 · 開賽前 10 分鐘截止 · 來源：悅悅（live）、足籃記（live）、足球精英（live）、奶龍哥（live） · 狀態更新 2026-11-15 03:14:18</div>
+
+<div class="panel section" style="margin-top:1rem">
+  <h2>本金曲線</h2>
+  <svg class="curve" viewBox="0 0 400 170" preserveAspectRatio="none"><line class="base" x1="0" x2="400" y1="10.0" y2="10.0"/><line class="stop" x1="0" x2="400" y1="150.0" y2="150.0"/><polyline points="10.0,10.0 39.2,13.9 68.5,17.8 97.7,21.7 126.9,25.6 156.2,29.4 185.4,26.2 214.6,30.1 243.8,26.7 273.1,23.0 302.3,19.7 331.5,16.2 360.8,13.1 390.0,11.2"/></svg>
+  <div class="note">虛線：起始本金；紅虛線：全停線。範圍 2,800 – 10,000</div>
+  
+</div>
+
+
+
+<div class="panel section" id="slips-today"><h2>今日 / 未結</h2>
+
+<div class="table-wrap"><table class="table compact"><thead><tr><th>#</th><th>出飛</th><th>場次</th><th>開賽</th><th>盤口</th><th class="num">賠率</th><th class="num">最低</th><th class="num">注</th><th>頻道</th><th>結果</th><th class="num">盈虧</th></tr></thead><tbody>
+<tr>
+  <td>223 <span class="tag">paper</span></td><td class="small">11-14 12:38</td>
+  <td>挪威 對 威爾斯<div class="small muted">歐洲國家聯賽 · SUN FB8802</div></td>
+  <td class="small">11-15 01:00</td><td>讓球：主 挪威 [-1.5/-2]</td>
+  <td class="num">1.80</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status open">open</span></td>
+  <td class="num "></td></tr>
+</tbody></table></div>
+
+</div>
+<div class="panel section" id="slips-history"><h2>歷史（最近 300 張）</h2>
+
+<div class="table-wrap"><table class="table compact"><thead><tr><th>#</th><th>出飛</th><th>場次</th><th>開賽</th><th>盤口</th><th class="num">賠率</th><th class="num">最低</th><th class="num">注</th><th>頻道</th><th>結果</th><th class="num">盈虧</th></tr></thead><tbody>
+<tr>
+  <td>223 <span class="tag">paper</span></td><td class="small">11-14 12:38</td>
+  <td>挪威 對 威爾斯<div class="small muted">歐洲國家聯賽 · SUN FB8802</div></td>
+  <td class="small">11-15 01:00</td><td>讓球：主 挪威 [-1.5/-2]</td>
+  <td class="num">1.80</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status open">open</span></td>
+  <td class="num "></td></tr><tr>
+  <td>216 <span class="tag">paper</span></td><td class="small">11-13 13:11</td>
+  <td>塞爾維亞 對 德國<div class="small muted">歐洲國家聯賽 · SAT FB8781</div></td>
+  <td class="small">11-14 03:45</td><td>讓球：客 德國 [-1.5/-2]</td>
+  <td class="num">1.97</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status half_won">half_won</span></td>
+  <td class="num pos">+97</td></tr><tr>
+  <td>214 <span class="tag">paper</span></td><td class="small">11-13 13:11</td>
+  <td>荷蘭 對 希臘<div class="small muted">歐洲國家聯賽 · SAT FB8784</div></td>
+  <td class="small">11-14 03:45</td><td>讓球：主 荷蘭 [-1]</td>
+  <td class="num">1.80</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status won">won</span></td>
+  <td class="num pos">+160</td></tr><tr>
+  <td>199 <span class="tag">paper</span></td><td class="small">11-07 22:59</td>
+  <td>華倫西亞 對 皇家馬德里<div class="small muted">西班牙甲組聯賽 · SUN FB8470</div></td>
+  <td class="small">11-08 04:00</td><td>讓球：客 皇家馬德里 [-1.5/-2]</td>
+  <td class="num">1.89</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status won">won</span></td>
+  <td class="num pos">+178</td></tr><tr>
+  <td>184 <span class="tag">paper</span></td><td class="small">11-06 12:51</td>
+  <td>愛華頓 對 高雲地利<div class="small muted">英格蘭超級聯賽 · SAT FB8363</div></td>
+  <td class="small">11-07 04:00</td><td>入球大細：大 [2.5/3]</td>
+  <td class="num">1.85</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status won">won</span></td>
+  <td class="num pos">+170</td></tr><tr>
+  <td>160 <span class="tag">paper</span></td><td class="small">11-02 22:21</td>
+  <td>阿特蘭大 對 帕爾馬<div class="small muted">意大利甲組聯賽 · TUE FB8188</div></td>
+  <td class="small">11-03 03:45</td><td>角球大細：大 [9.5]</td>
+  <td class="num">1.95</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status won">won</span></td>
+  <td class="num pos">+190</td></tr><tr>
+  <td>79 <span class="tag">paper</span></td><td class="small">10-27 22:30</td>
+  <td>拖連奴 對 科木<div class="small muted">意大利甲組聯賽 · WED FB7773</div></td>
+  <td class="small">10-28 03:45</td><td>讓球：客 科木 [-0.5/-1]</td>
+  <td class="num">1.88</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status won">won</span></td>
+  <td class="num pos">+176</td></tr><tr>
+  <td>71 <span class="tag">paper</span></td><td class="small">10-25 22:38</td>
+  <td>國民隊 對 布拉加<div class="small muted">葡萄牙超級聯賽 · MON FB7657</div></td>
+  <td class="small">10-26 02:00</td><td>讓球：客 布拉加 [-1]</td>
+  <td class="num">1.81</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status lost">lost</span></td>
+  <td class="num neg">-200</td></tr><tr>
+  <td>45 <span class="tag">paper</span></td><td class="small">10-21 22:13</td>
+  <td>皇家馬德里 對 RB萊比錫<div class="small muted">歐洲聯賽冠軍盃 · THU FB7266</div></td>
+  <td class="small">10-22 03:00</td><td>讓球：主 皇家馬德里 [-2]</td>
+  <td class="num">1.83</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status won">won</span></td>
+  <td class="num pos">+166</td></tr><tr>
+  <td>22 <span class="tag">paper</span></td><td class="small">10-16 02:07</td>
+  <td>馬賽 對 奧林比亞高斯<div class="small muted">歐霸盃 · FRI FB6858</div></td>
+  <td class="small">10-16 03:00</td><td>入球大細：大 [2.5]</td>
+  <td class="num">1.70</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status lost">lost</span></td>
+  <td class="num neg">-200</td></tr><tr>
+  <td>11 <span class="tag">paper</span></td><td class="small">10-12 22:47</td>
+  <td>拖連奴 對 烏甸尼斯<div class="small muted">意大利甲組聯賽 · TUE FB6526</div></td>
+  <td class="small">10-13 02:45</td><td>入球大細：細 [2/2.5]</td>
+  <td class="num">1.88</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status lost">lost</span></td>
+  <td class="num neg">-200</td></tr><tr>
+  <td>7 <span class="tag">paper</span></td><td class="small">10-11 23:11</td>
+  <td>卡利亞里 對 祖雲達斯<div class="small muted">意大利甲組聯賽 · MON FB6516</div></td>
+  <td class="small">10-12 02:45</td><td>讓球：客 祖雲達斯 [-1]</td>
+  <td class="num">1.96</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status lost">lost</span></td>
+  <td class="num neg">-200</td></tr><tr>
+  <td>5 <span class="tag">paper</span></td><td class="small">10-10 22:45</td>
+  <td>拿玻里 對 費辛隆尼<div class="small muted">意大利甲組聯賽 · SUN FB6514</div></td>
+  <td class="small">10-11 02:45</td><td>讓球：客 費辛隆尼 [+1/+1.5]</td>
+  <td class="num">1.85</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status lost">lost</span></td>
+  <td class="num neg">-200</td></tr><tr>
+  <td>1 <span class="tag">paper</span></td><td class="small">10-05 22:48</td>
+  <td>黑山 對 阿美尼亞<div class="small muted">歐洲國家聯賽 · TUE FB6301</div></td>
+  <td class="small">10-06 02:45</td><td>入球大細：大 [2.5/3]</td>
+  <td class="num">1.76</td><td class="num muted">1.70</td><td class="num">200</td>
+  <td class="small">悅悅精選推薦⚽️<div class="small muted">悅悅</div></td><td><span class="status lost">lost</span></td>
+  <td class="num neg">-200</td></tr>
+</tbody></table></div>
+
+</div>
+<div class="grid2">
+  <div class="panel" id="skips"><h2>略過原因</h2>
+    <p><span class="tag amber-tag">match_not_on_current_card × 373</span> <span class="tag amber-tag">unparsed × 96</span> <span class="tag amber-tag">tip_line_not_on_hkjc × 78</span> <span class="tag amber-tag">duplicate_match × 75</span> <span class="tag amber-tag">odds_confirm_no_data × 24</span> <span class="tag amber-tag">no_pool × 17</span> <span class="tag amber-tag">too_close_to_kickoff × 12</span> <span class="tag amber-tag">odds_against × 6</span> <span class="tag amber-tag">line_suspended × 6</span> <span class="tag amber-tag">daily_loss_stop × 3</span> </p>
+    <div class="table-wrap"><table class="table compact"><thead><tr><th>Pick</th><th>出飛</th><th>原因</th><th>詳情</th></tr></thead><tbody><tr><td class="small">#43661 足球精英</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">塞爾維亞 v 德國</td></tr><tr><td class="small">#43661 足球精英</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">塞爾維亞 v 德國</td></tr><tr><td class="small">#43661 足球精英</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">塞爾維亞 v 德國</td></tr><tr><td class="small">#43662 足球精英</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">保加利亞 v 冰島</td></tr><tr><td class="small">#43662 足球精英</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">保加利亞 v 冰島</td></tr><tr><td class="small">#43662 足球精英</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">保加利亞 v 冰島</td></tr><tr><td class="small">#43658 足籃記</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">塞爾維亞 v 德國</td></tr><tr><td class="small">#43658 足籃記</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">塞爾維亞 v 德國</td></tr><tr><td class="small">#43658 足籃記</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">塞爾維亞 v 德國</td></tr><tr><td class="small">#43659 足籃記</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">保加利亞 v 冰島</td></tr><tr><td class="small">#43659 足籃記</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">保加利亞 v 冰島</td></tr><tr><td class="small">#43659 足籃記</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">保加利亞 v 冰島</td></tr><tr><td class="small">#43688 足籃記</td><td class="small">11-14 21:30</td><td class="small">duplicate_match</td><td class="small muted">FB8802|2026-11-15 01:00</td></tr><tr><td class="small">#43688 足籃記</td><td class="small">11-14 21:30</td><td class="small">duplicate_match</td><td class="small muted">FB8802|2026-11-15 01:00</td></tr><tr><td class="small">#43688 足籃記</td><td class="small">11-14 21:30</td><td class="small">duplicate_match</td><td class="small muted">FB8802|2026-11-15 01:00</td></tr><tr><td class="small">#43689 足籃記</td><td class="small">11-14 21:30</td><td class="small">odds_against</td><td class="small muted">FB8800 HIL 2.5/3.0 H 1.650@19:31 → 1.810@13:56 Δ+0.160</td></tr><tr><td class="small">#43690 足球精英</td><td class="small">11-14 21:30</td><td class="small">duplicate_match</td><td class="small muted">FB8802|2026-11-15 01:00</td></tr><tr><td class="small">#43690 足球精英</td><td class="small">11-14 21:30</td><td class="small">duplicate_match</td><td class="small muted">FB8802|2026-11-15 01:00</td></tr><tr><td class="small">#43690 足球精英</td><td class="small">11-14 21:30</td><td class="small">duplicate_match</td><td class="small muted">FB8802|2026-11-15 01:00</td></tr><tr><td class="small">#43691 足球精英</td><td class="small">11-14 21:30</td><td class="small">duplicate_match</td><td class="small muted">FB8800|2026-11-15 03:45</td></tr><tr><td class="small">#43691 足球精英</td><td class="small">11-14 21:30</td><td class="small">duplicate_match</td><td class="small muted">FB8800|2026-11-15 03:45</td></tr><tr><td class="small">#43691 足球精英</td><td class="small">11-14 21:30</td><td class="small">odds_against</td><td class="small muted">FB8800 HIL 2.5/3.0 H 1.650@19:31 → 1.810@13:56 Δ+0.160</td></tr><tr><td class="small">#43667 奶龍哥</td><td class="small">11-14 12:03</td><td class="small">odds_confirm_no_data</td><td class="small muted">rows=0 FB8807 HAD None H</td></tr><tr><td class="small">#43663 足球精英</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">安道爾 v 直布羅陀</td></tr><tr><td class="small">#43663 足球精英</td><td class="small">11-14 07:27</td><td class="small">match_not_on_current_card</td><td class="small muted">安道爾 v 直布羅陀</td></tr></tbody></table></div>
+  </div>
+  <div class="panel" id="events"><h2>風控事件</h2>
+    <div class="table-wrap"><table class="table compact"><thead><tr><th>時間</th><th>事件</th><th>詳情</th></tr></thead><tbody><tr><td class="small">2026-11-01 18:09:56</td><td>daily_loss_stop</td><td class="small muted">realized today HK$-600</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#48 live FB7270 HIL 大 [2.5/3] @1.74</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#49 shadow_a FB7270 HIL 大 [2.5/3] @1.74</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#50 shadow_b FB7270 HIL 大 [2.5/3] @1.74</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#51 live FB7266 HDC 主 皇家馬德里 [-2] @1.8</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#52 shadow_a FB7266 HDC 主 皇家馬德里 [-2] @1.8</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#53 shadow_b FB7266 HDC 主 皇家馬德里 [-2] @1.8</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#54 live FB7263 FHH 主 國際米蘭 [-0.5/-1] @1.62</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#55 shadow_a FB7263 FHH 主 國際米蘭 [-0.5/-1] @1.62</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#56 shadow_b FB7263 FHH 主 國際米蘭 [-0.5/-1] @1.62</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#57 live FB7268 HIL 大 [3.5] @1.85</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#58 shadow_a FB7268 HIL 大 [3.5] @1.85</td></tr><tr><td class="small">2026-10-21 22:38:06</td><td>slip_forced</td><td class="small muted">#59 shadow_b FB7268 HIL 大 [3.5] @1.85</td></tr><tr><td class="small">2026-10-20 09:03:44</td><td>hard_stop_waive</td><td class="small muted">user 2026-10-20: ignore_hard_stop=true for paper Live demo; sticky hard_stop cleared; 真倉 untouched</td></tr><tr><td class="small">2026-10-20 05:32:31</td><td>hard_stop_waived</td><td class="small muted">WAIVED 2026-10-20 09:03:44: was hard_stop @ 2026-10-20 05:32:31 — bankroll HK$2718 &lt;= HK$2800. user 2026-10-20 ignore_hard_stop paper live demo</td></tr></tbody></table></div>
+    
+  </div>
+</div>
+
+  </main>
+  <footer class="footer">
+    唯讀 · Live ≠ Backtest（唔會混）· Tipsme 另計 · HKJC u：冇 HKJC 賠率嘅贏波 = 0u · 頻道計分 1u = HK$500（真錢注 1u = HK$200）· SQLite ro · PUBLIC · 頁面時間 2026-11-15 03:16 HKT
+  </footer>
+  <script src="static/sort.js" defer></script>
+<!-- algowise-theme -->
+<script src="static/algowise-theme.js" defer></script>
+</body>
+</html>
